@@ -25,3 +25,4 @@ Right click the page and click "save as", then move the float.theme.css file to 
 Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with installation, if you find theme bugs, if you want to contribute and help clean the code, join for future updates or future themes / plugins, etc.
 
 **DO NOT PING ME OR ASK FOR SUPPORT ON MY THEME IN THE BETTERDISCORD SERVER AS THIS IS NOT AN OFFICIAL THEME, AND YOU WILL NOT FIND SUPPORT THERE**
+ 
