@@ -18,7 +18,7 @@ In the BetterDiscord settings, enable Transparency and enable Remove Minimum Siz
 
 In the Powertoys settings, enable Always On Top and set a keybind.
 
-Then, install Float [here](https://raw.githubusercontent.com/cedrickzedd/BD/main/Themes/Float/Float.theme.css)
+Then, install Float [here](https://raw.githubusercontent.com/cedrickzedd/Float/main/Float.theme.css)
 
 Option 1 : (Install theme for BetterDiscord) Right click the page and click "save as", then move the float.theme.css file to the BetterDiscord theme directory. Enable theme and you are set to go
 
