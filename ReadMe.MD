@@ -13,14 +13,20 @@ This theme was made using pure css and a couple BetterDiscord settings.
 
 You will need to have [BetterDiscord](https://betterdiscord.app/) installed (or [Powercord](https://powercord.dev/)), [Powertoys by Microsoft](https://aka.ms/installpowertoys) installed, and a [Discord Client](https://discord.com/download) (Canary, PTB, and Stable Releases should all work).
 
+
 In the BetterDiscord settings, enable Transparency and enable Remove Minimum Size.
 
 In the Powertoys settings, enable Always On Top and set a keybind.
 
 Then, install Float [here](https://raw.githubusercontent.com/cedrickzedd/BD/main/Themes/Float/Float.theme.css)
 
-Right click the page and click "save as", then move the float.theme.css file to the BetterDiscord theme directory. Enable theme and you are set to go
-# Help! THemE No WOrk, It BRoCkeN
+Option 1 : (Install theme for BetterDiscord) Right click the page and click "save as", then move the float.theme.css file to the BetterDiscord theme directory. Enable theme and you are set to go
+
+Option 2 : (Install theme for PowerCord) open up a command prompt and enter 
+```
+cd powercord/src/Powercord/themes && git clone https://github.com/cedrickzedd/Float
+```
+# Help! THeME No WOrk, It BRoCkeN
 
 Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with installation, if you find theme bugs, if you want to contribute and help clean the code, join for future updates or future themes / plugins, etc.
 
