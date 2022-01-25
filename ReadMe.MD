@@ -11,7 +11,7 @@ This theme was made using pure css and a couple BetterDiscord settings.
 
 # What you will need for this theme to work
 
-You will need to have [BetterDiscord](https://betterdiscord.app/) installed, [Powertoys by Microsoft](https://aka.ms/installpowertoys) installed, and a [Discord Client](https://discord.com/download) (Canary, PTB, and Stable Releases should all work).
+You will need to have [BetterDiscord](https://betterdiscord.app/) installed (or [Powercord](https://powercord.dev/)), [Powertoys by Microsoft](https://aka.ms/installpowertoys) installed, and a [Discord Client](https://discord.com/download) (Canary, PTB, and Stable Releases should all work).
 
 In the BetterDiscord settings, enable Transparency and enable Remove Minimum Size.
 
@@ -24,5 +24,5 @@ Right click the page and click "save as", then move the float.theme.css file to 
 
 Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with installation, if you find theme bugs, if you want to contribute and help clean the code, join for future updates or future themes / plugins, etc.
 
-**DO NOT PING ME OR ASK FOR SUPPORT ON MY THEME IN THE BETTERDISCORD SERVER AS THIS IS NOT AN OFFICIAL THEME, AND YOU WILL NOT FIND SUPPORT THERE**
+**DO NOT PING ME OR ASK FOR SUPPORT ON MY THEME IN THE BETTERDISCORD SERVER (OR THE POWERCORD SERVER) AS THIS IS NOT AN OFFICIAL THEME, AND YOU WILL NOT FIND SUPPORT THERE**
  
