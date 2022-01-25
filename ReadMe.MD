@@ -22,10 +22,11 @@ Then, install Float [here](https://raw.githubusercontent.com/cedrickzedd/BD/main
 
 Option 1 : (Install theme for BetterDiscord) Right click the page and click "save as", then move the float.theme.css file to the BetterDiscord theme directory. Enable theme and you are set to go
 
-Option 2 : (Install theme for PowerCord) open up a command prompt and enter 
+Option 2 : (Install theme for Powercord) open up a command prompt and enter 
 ```
 cd powercord/src/Powercord/themes && git clone https://github.com/cedrickzedd/Float
 ```
+**Note: Powercord does not have Remove Minimum Size setting.**
 # Help! THeME No WOrk, It BRoCkeN
 
 Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with installation, if you find theme bugs, if you want to contribute and help clean the code, join for future updates or future themes / plugins, etc.
