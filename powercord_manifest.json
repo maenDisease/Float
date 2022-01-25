@@ -1,0 +1,8 @@
+{
+    "name": "Float",
+    "description": "A discord window that is minimal and transparent. Works best with Microsoft Powertoys Always On Top enabled.",
+    "version": "0.0.1",
+    "author": "Cedrick & Disease",
+    "theme": "Float.theme.css",
+    "license": "MIT"
+}

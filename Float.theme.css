@@ -1,0 +1,62 @@
+/**
+ * @name         Float
+ * @description  A discord window that is minimal and transparent. Works best with Microsoft Powertoys Always On Top enabled.
+ * @author       Cedrick
+ * @version      0.0.1
+ */
+
+
+
+
+
+
+
+
+
+/*
+      ___           ___       ___           ___           ___     
+     /\  \         /\__\     /\  \         /\  \         /\  \    
+    /::\  \       /:/  /    /::\  \       /::\  \        \:\  \   
+   /:/\:\  \     /:/  /    /:/\:\  \     /:/\:\  \        \:\  \  
+  /::\~\:\  \   /:/  /    /:/  \:\  \   /::\~\:\  \       /::\  \ 
+ /:/\:\ \:\__\ /:/__/    /:/__/ \:\__\ /:/\:\ \:\__\     /:/\:\__\
+ \/__\:\ \/__/ \:\  \    \:\  \ /:/  / \/__\:\/:/  /    /:/  \/__/
+      \:\__\    \:\  \    \:\  /:/  /       \::/  /    /:/  /     
+       \/__/     \:\  \    \:\/:/  /        /:/  /     \/__/      
+                  \:\__\    \::/  /        /:/  /                 
+                   \/__/     \/__/         \/__/                  
+				   
+				   
+	            						By Cedrick							
+
+*/
+/*< -- Do not remove or add anything to this theme for best results and performance. All is needed for the theme to work.  -- >*/
+
+.wordmarkWindows-2dq6rw > svg {display:none}
+.wordmarkWindows-2dq6rw::after {content:'Float Client';  font-size:14px;font-weight:600;color: white!important;}
+
+.name-3qeTY-{flex:unset}
+.styleFlexible-x0_sIC.menu-1QACrS{min-width:max-content;background-color:rgba(0,0,0,0.5)!important;}
+.app-3xd6d0{background-color:rgba(0, 0, 0, 0.6)!important;border-radius:8px}
+*{background-color:transparent!important;}	
+.container-ZMc96U{-webkit-app-region:drag;}	
+.quickswitcher-pKcM9U{backdrop-filter:blur(5px);background-color:rgba(0, 0, 0, 0.5)!important;width: 400px; position: absolute;  transform: translate(10, -50%);}	
+
+
+@media (max-width: 155px) {
+		.wordmarkWindows-2dq6rw{
+        display: none;
+    }
+}	
+
+    @media (max-width: 900px) {
+    .container-ZMc96U.themed-Hp1KC_, .messageAttachment-CZp8Iv, [id*="message-actions-"] > div:first-child, .wrapper-1_HaEi.guilds-2JjMmN, .sidebar-1tnWFu, .protip-1jXzAl.inline-1zjmuk, .scroller-2qwVWY::-webkit-scrollbar, .scroller-kQBbkU::-webkit-scrollbar, .sidebar-1tnWFu, .wrapper-1_HaEi.guilds-2JjMmN, .container-2o3qEW, .buttons-uaqb-5, .attachWrapper-3slhXI, .search-39IXmY, [aria-label="Threads"], [aria-label="Notification Settings"], [aria-label="Pinned Messages"], [aria-label="Show Member List"], [aria-label="Inbox"], [href="https://support.discord.com"], .divider-q3P9HC, .topic-11NuQZ.expandable-3CaLeS, .note-OhIxFa{
+        display: none;
+    }
+}
+  
+
+ .children-3xh0VB::after, .form-3gdLxP::before, .content-1jQy2l::before{display:none;}
+
+
+
