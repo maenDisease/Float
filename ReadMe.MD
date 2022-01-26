@@ -9,30 +9,44 @@ I was very interested in this, so I decided to start developing something simila
 
 This theme was made using pure css and a couple BetterDiscord settings. 
 
-# What you will need for this theme to work
+# Installing Float
 
-You will need to have [BetterDiscord](https://betterdiscord.app/) installed (or [Powercord](https://powercord.dev/)), [Powertoys by Microsoft](https://aka.ms/installpowertoys) installed, and a [Discord Client](https://discord.com/download) (Canary, PTB, and Stable Releases should all work).
+## BetterDiscord
+- Install [BetterDiscord](https://betterdiscord.app/).
+- [Download Float from the raw](https://cedrickzedd.github.io/Float/Float.theme.css). Right click the page and click `Save as`, then move the `Float.theme.css` file into the BetterDiscord theme directory. Enable the theme.
 
+In the BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove Minimum Size`. Optional: enable `Enable Transparency` to use background transparency.
 
-In the BetterDiscord settings, enable Transparency and enable Remove Minimum Size.
-
-In the Powertoys settings, enable Always On Top and set a keybind.
-
-Then, install Float [here](https://raw.githubusercontent.com/cedrickzedd/Float/main/Float.theme.css)
-
-Option 1 : (Install theme for BetterDiscord) Right click the page and click "save as", then move the float.theme.css file to the BetterDiscord theme directory. Enable theme and you are set to go
-
-Option 2 : (Install theme for Powercord) open up a command prompt and enter 
+## Powercord
+- Install [Powercord](https://powercord.dev/).
+- Open a command prompt and enter:
 ```
 cd powercord/src/Powercord/themes && git clone https://github.com/cedrickzedd/Float
 ```
 **Note: Powercord does not have Remove Minimum Size setting.**
+
+## Always on Top function
+- Install [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys).
+
+In the Powertoys settings, enable `Always On Top` and set a keybind: Default: `⊞ Win + CTRL + T`.
+
 # Help! THeME No WOrk, It BRoCkeN
 
 Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with installation, if you find theme bugs, if you want to contribute and help clean the code, join for future updates or future themes / plugins, etc.
 
 **DO NOT PING ME OR ASK FOR SUPPORT ON MY THEME IN THE BETTERDISCORD SERVER (OR THE POWERCORD SERVER) AS THIS IS NOT AN OFFICIAL THEME, AND YOU WILL NOT FIND SUPPORT THERE**
- 
-# Current Developers 
-Cedrick - Owner, Creator
-Disease- Co Owner, Maintainer
+
+# Current Developers
+
+<table>
+<tr>
+<td align="center">
+    <img src="https://avatars.githubusercontent.com/u/73869003?v=4" width="100px;" alt="Cedrick Zedd"/><br />
+    <a href="https://github.com/cedrickzedd" target="_blank" rel="noreferrer noopener"><strong>Cedrick Zedd</strong></a><br />Owner</a>
+</td>
+<td align="center">
+    <img src="https://avatars.githubusercontent.com/u/90428263?v=4" width="100px;" alt="maenDisease"/><br />
+    <a href="https://github.com/maenDisease" target="_blank" rel="noreferrer noopener"><strong>maenDisease</strong></a><br />Maintainer</a>
+</td>
+</tr>
+</table>
