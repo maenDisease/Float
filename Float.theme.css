@@ -1,4 +1,4 @@
- /**
+/**
  * @name Float
  * @author Cedrick, Disease
  * @version 0.0.3
@@ -10,3 +10,11 @@
 
 /*recommended to comment out/remove this if your theme uses custom settings icons.*/
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css) (max-width: 700px);
+
+:root {
+    --guildbar-width: 56px;
+    --header-height: 40px;
+    --compact-background-color: var(--background-primary);
+    --compact-background-opacity: 1;
+    --compact-textarea-color: var(--channeltextarea-background);
+}
