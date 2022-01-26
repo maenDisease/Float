@@ -33,3 +33,6 @@ Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with in
 
 **DO NOT PING ME OR ASK FOR SUPPORT ON MY THEME IN THE BETTERDISCORD SERVER (OR THE POWERCORD SERVER) AS THIS IS NOT AN OFFICIAL THEME, AND YOU WILL NOT FIND SUPPORT THERE**
  
+# Current Developers 
+Cedrick - Owner, Creator
+Disease- Co Owner, Maintainer
