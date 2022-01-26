@@ -1,10 +1,12 @@
  /**
  * @name Float
  * @author Cedrick, Disease
- * @version 0.0.2
+ * @version 0.0.3
  * @description A discord window that is minimal and transparent. Works best with Microsoft Powertoys Always On Top enabled.
  * @source https://github.com/cedrickzedd/Float
 */
 
-
 @import url("https://cedrickzedd.github.io/Float/Float.css");
+
+/*recommended to comment out/remove this if your theme uses custom settings icons.*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css) (max-width: 700px);
