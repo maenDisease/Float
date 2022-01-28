@@ -171,7 +171,8 @@ body,
     .circleIconButton-1VxDrg,
     .childWrapper-1j_1ub,
     .scrollableContainer-15eg7h,
-    #bd-pub-button {
+    #bd-pub-button,
+    .peopleColumn-1wMU14 {
         background-color: transparent !important;
     }
 
