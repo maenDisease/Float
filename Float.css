@@ -317,7 +317,6 @@ body,
     }
 
     .searchBar-zdmu7v .clear-2KQ7l1::before {
-        background: rgba(255, 0, 0, 0.1);
         position: fixed;
         content: '';
         width: 100%;
