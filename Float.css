@@ -1,21 +1,23 @@
 @import url(https://smolalli.github.io/Themes/MinimalMode/source.css) (max-width: 700px);
 
 :root {
-    --guildbar-width: 56px;
     --header-height: 40px;
-    --compact-background-color: var(--background-primary);
+    --guildbar-width: 56px;
+    --compact-channellist-width: 240px;
+    --sidebar-width: 240px;
+    --sidebar-hide-width: 40px;
+
+    /*Float colors**/
     --compact-background-opacity: 1;
+    --compact-background-color: var(--background-primary);
     --compact-textarea-color: var(--channeltextarea-background);
 }
-
 
 /*return transition*/
 /*400*/
 .cozy-VmLDNB .repliedMessage-3Z6XBG:before,
 .contents-2MsGLg img,
 .cozy-VmLDNB.wrapper-30-Nkg,
-/*939*/
-.container-ZMc96U,
 /*700*/
 .bg-1QIAus,
 .wrapper-3HVHpV,
@@ -50,7 +52,6 @@ body,
     transition: 0.5s ease;
 }
 
-.container-2o3qEW,
 .sidebar-1tnWFu {
     width: 240px;
     -webkit-transition: 0.5s ease;
@@ -101,23 +102,16 @@ body,
         padding-left: 35px;
     }
 
-    .attachButton-1ijpt9,
-    .buttons-uaqb-5 {
+    .toolbar-3_r2xA>[aria-label="Pinned Messages"],
+    .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2) {
         display: none;
     }
 
 }
 
-@media (max-width: 939px) {
-    .container-2o3qEW {
-        width: 0 !important;
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
-    }
-}
-
 @media (max-width: 700px) {
 
+    /*transition*/
     .bg-1QIAus,
     .wrapper-3HVHpV,
     .wrapper-3HVHpV>*,
@@ -152,16 +146,12 @@ body,
         transition: 0.5s ease;
     }
 
-    .container-ZMc96U,
-    .iconWrapper-2awDjA>svg {
-        -webkit-app-region: drag;
-    }
-
+    /*transparency*/
     .bg-1QIAus,
     .wrapper-3HVHpV,
     .wrapper-3HVHpV>* {
         background-color: var(--compact-background-color);
-        opacity: var(--compact-background-opacity);
+        opacity: var(--compact-background-opacity) !important;
     }
 
     body,
@@ -180,11 +170,17 @@ body,
     .wrapper-1_HaEi,
     .circleIconButton-1VxDrg,
     .childWrapper-1j_1ub,
-    .scrollableContainer-15eg7h {
+    .scrollableContainer-15eg7h,
+    #bd-pub-button {
         background-color: transparent !important;
     }
 
-    .container-2o3qEW,
+    .container-ZMc96U,
+    .children-3xh0VB .iconWrapper-2awDjA>svg {
+        -webkit-app-region: drag;
+    }
+
+    /*.container-2o3qEW,*/
     .children-3xh0VB::after,
     .form-3gdLxP::before,
     .content-1jQy2l::before,
@@ -193,8 +189,7 @@ body,
     .protip-1jXzAl.inline-1zjmuk,
     .divider-q3P9HC,
     .topic-11NuQZ.expandable-3CaLeS,
-    .note-OhIxFa,
-    .toolbar-3_r2xA .iconWrapper-2awDjA {
+    .note-OhIxFa {
         display: none;
     }
 
@@ -248,24 +243,46 @@ body,
         width: 0;
     }
 
-    /*collapse channel*/
-    .sidebar-1tnWFu {
-        -webkit-box-shadow: var(--elevation-high);
-        box-shadow: var(--elevation-high);
-        border-radius: 8px 8px 0 0 !important;
+    /*toolbar*/
+    .toolbar-3_r2xA>[aria-label="Hide Member List"],
+    .toolbar-3_r2xA>[aria-label="Show Member List"],
+    .toolbar-3_r2xA>[aria-label="Pinned Messages"] {
+        order: 1;
+    }
+
+    .toolbar-3_r2xA>[aria-label="Threads"],
+    .toolbar-3_r2xA>[aria-label="Notification Settings"],
+    .toolbar-3_r2xA>[aria-label="Add Friends to DM"],
+    .toolbar-3_r2xA>[href="https://support.discord.com"] {
+        display: none;
+    }
+
+    .iconWrapper-2awDjA>svg {
+        width: 18px;
+    }
+
+    .messagesPopoutWrap-3zryHW {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    /*inbox*/
+    .toolbar-3_r2xA>[aria-label="Inbox"] {
+        position: fixed !important;
         width: 0 !important;
-        position: fixed;
-        height: calc(100% - 40px);
-        z-index: 3;
-        bottom: 0;
+        padding: 0 !important;
+        pointer-events: none !important;
     }
 
-    .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu {
-        width: 240px !important;
+    .toolbar-3_r2xA>[aria-label="Inbox"]>*,
+    .toolbar-3_r2xA>[aria-label="Inbox"]::before {
+        display: none !important;
     }
 
-    .sidebar-1tnWFu:hover {
-        width: 240px !important;
+    .recentMentionsPopout-2bI1ZN {
+        width: 70vw;
+        min-width: 100%;
+        max-height: 80vh;
     }
 
     /*search bar*/
@@ -292,12 +309,69 @@ body,
         top: 4px;
         right: 16px;
         max-width: 80%;
-        height: 70%;
+        max-height: 90vh;
         border-radius: 8px;
         -webkit-box-shadow: var(--elevation-high);
         box-shadow: var(--elevation-high);
+        z-index: 2;
     }
 
+    .searchBar-zdmu7v .clear-2KQ7l1::before {
+        background: rgba(255, 0, 0, 0.1);
+        position: fixed;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: var(--header-height);
+        left: var(--guildbar-width);
+    }
+
+    /*channel*/
+    .sidebar-1tnWFu {
+        position: fixed;
+        -webkit-box-shadow: var(--elevation-high);
+        box-shadow: var(--elevation-high);
+        border-radius: 8px 8px 0 0;
+        width: 0 !important;
+        height: calc(100% - var(--header-height));
+        z-index: 3 !important;
+        bottom: 0;
+    }
+
+    .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu {
+        width: var(--compact-channellist-width) !important;
+    }
+
+    .sidebar-1tnWFu:hover {
+        width: var(--compact-channellist-width) !important;
+    }
+
+    /*memberlist*/
+    .container-2o3qEW {
+        position: fixed;
+        right: 0;
+        -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
+        box-shadow: var(--elevation-stroke), var(--elevation-high);
+        border-radius: 8px 0 0 0;
+        z-index: 2 !important;
+    }
+
+    .members-3WRCEx {
+        border-radius: 8px 0 0 0;
+    }
+
+    .iconWrapper-2awDjA[aria-label="Hide Member List"]::before {
+        position: fixed;
+        content: '';
+        width: var(--compact-sidebar-hide-width);
+        height: 100%;
+        top: var(--header-height);
+        right: var(--sidebar-width);
+    }
+
+
+
+    /*chat text*/
     .messageContent-2t3eCI,
     .username-h_Y3Us,
     .repliedTextPreview-1bvxun,
@@ -312,16 +386,35 @@ body,
     }
 
     /*username*/
-    .header-2jRmjb {
-        text-overflow: ellipsis;
+    .contents-2MsGLg .header-2jRmjb {
+        display: flex;
+    }
+
+    .headerText-2z4IhQ {
+        min-width: 0;
+        white-space: nowrap;
     }
 
     .username-h_Y3Us {
+        display: block;
+        text-overflow: ellipsis;
+    }
+
+    .timestampInline-_lS3aK {
         white-space: nowrap;
     }
 
     .message-2CShn3 {
         padding-right: 12px !important;
+    }
+
+    .channelTextArea-1FufC0 {
+        background-color: var(--compact-textarea-color);
+    }
+
+    .stickerButton-1-nFh2,
+    .buttons-uaqb-5>.button-f2h6uQ:not(.BD-TeX-plugin-button)> :not(.translateButton-DhP9x8) {
+        display: none;
     }
 
     /*chat scrollbar*/
@@ -331,10 +424,6 @@ body,
 
     .scroller-kQBbkU::-webkit-scrollbar-track {
         display: none;
-    }
-
-    .channelTextArea-1FufC0 {
-        background-color: var(--compact-textarea-color);
     }
 
     /*image attachment resize*/
@@ -352,5 +441,27 @@ body,
 
     .imageDetails-1t6Zms {
         display: none;
+    }
+
+    /*quick switcher*/
+    .quickswitcher-pKcM9U {
+        top: var(--header-height);
+        width: 100vw;
+    }
+
+    /*nitro stuck warning*/
+    .applicationStore-2nk7Lo::before {
+        content: "Welcome to Nitro Purgatory! To get out, press Ctrl + K and search for a friend.";
+        display: block;
+        position: absolute;
+        top: calc(var(--header-height) + 20px);
+        left: 15px;
+        width: 80%;
+        padding: 8px 16px;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #f04747;
+        font-weight: 500;
+        z-index: 999;
     }
 }
