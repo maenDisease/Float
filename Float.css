@@ -35,6 +35,8 @@
 /* guildbar */
 .scroller-3X7KbA,
 .wrapper-1_HaEi,
+.guilds-2JjMmN .wrapper-28eC3z,
+.listItem-3SmSlK,
 .scrollableContainer-15eg7h {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
@@ -110,6 +112,8 @@
     /* guildbar */
     .scroller-3X7KbA,
     .wrapper-1_HaEi,
+    .guilds-2JjMmN .wrapper-28eC3z,
+    .listItem-3SmSlK,
     .scrollableContainer-15eg7h {
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease;
@@ -215,7 +219,7 @@
     .bd-addon-modal {
         max-height: 100%;
         height: fit-content;
-        max-width:100%;
+        max-width: 100%;
     }
 
     .bd-addon-modal .bd-addon-modal-header {
