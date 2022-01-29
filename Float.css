@@ -7,53 +7,35 @@
     --sidebar-width: 240px;
     --sidebar-hide-width: 40px;
 
-    /*Float colors**/
+    /* Float colors* */
     --compact-background-opacity: 1;
     --compact-background-color: var(--background-primary);
     --compact-textarea-color: var(--channeltextarea-background);
 }
 
-/*return transition*/
-/*400*/
+/* return transition */
+
+/* 400 */
 .cozy-VmLDNB .repliedMessage-3Z6XBG:before,
 .contents-2MsGLg img,
 .cozy-VmLDNB.wrapper-30-Nkg,
-/*700*/
+/* 700 */
+/* app */
 .bg-1QIAus,
-.wrapper-3HVHpV,
-.wrapper-3HVHpV>*,
-body,
-.chat-2ZfjoI,
 .app-2CXKsg,
 .appMount-2yBXZl,
+/* chat */
 .container-ZMc96U.themed-Hp1KC_,
-.container-1eFtFS,
-.container-1NXEtd,
-.wrapper-3HVHpV,
-.wrapper-3HVHpV>*,
-.privateChannels-oVe7HL,
-.scroller-WSmht3,
+.chat-2ZfjoI,
+/* other */
 .container-2cd8Mz,
-.guilds-2JjMmN .wrapper-28eC3z,
-.guilds-2JjMmN [class*="guildsError-"],
-.guilds-2JjMmN svg[width="48"],
-.listItem-3SmSlK,
-.circleIconButton-1VxDrg,
-.childWrapper-1j_1ub,
-.scrollableContainer-15eg7h {
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-}
-
+.container-ZMc96U,
+.sidebar-1tnWFu,
+#app-mount .layer-86YKbF~.layer-86YKbF .sidebar-nqHbhN,
+/* guildbar */
 .scroller-3X7KbA,
-.wrapper-1_HaEi {
-    background-color: var(--background-tertiary);
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-}
-
-.sidebar-1tnWFu {
-    width: 240px;
+.wrapper-1_HaEi,
+.scrollableContainer-15eg7h {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
@@ -111,77 +93,63 @@ body,
 
 @media (max-width: 700px) {
 
-    /*transition*/
+    /* transition */
+
+    /* app */
     .bg-1QIAus,
-    .wrapper-3HVHpV,
-    .wrapper-3HVHpV>*,
-    body,
-    .chat-2ZfjoI,
     .app-2CXKsg,
     .appMount-2yBXZl,
+    /* chat */
     .container-ZMc96U.themed-Hp1KC_,
-    .container-1eFtFS,
-    .container-1NXEtd,
-    .wrapper-3HVHpV,
-    .wrapper-3HVHpV>*,
-    .privateChannels-oVe7HL,
-    .scroller-WSmht3,
+    .chat-2ZfjoI,
+    /* other */
     .container-2cd8Mz,
-    .scroller-3X7KbA,
-    .wrapper-1_HaEi,
     .container-ZMc96U,
     .sidebar-1tnWFu,
-    .guilds-2JjMmN .wrapper-28eC3z,
-    .guilds-2JjMmN [class*="guildsError-"],
-    .guilds-2JjMmN svg[width="48"],
-    .listItem-3SmSlK,
-    .circleIconButton-1VxDrg,
-    .childWrapper-1j_1ub,
-    .scrollableContainer-15eg7h,
-    .sidebarRegion-1VBisG,
-    .sidebarRegion-1VBisG:hover,
     #app-mount .layer-86YKbF~.layer-86YKbF .sidebar-nqHbhN,
-    #app-mount .layer-86YKbF~.layer-86YKbF .sidebar-nqHbhN:hover {
+    /* guildbar */
+    .scroller-3X7KbA,
+    .wrapper-1_HaEi,
+    .scrollableContainer-15eg7h {
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease;
     }
 
-    /*transparency*/
-    .bg-1QIAus,
-    .wrapper-3HVHpV,
-    .wrapper-3HVHpV>* {
+    /* transparency */
+
+    .bg-1QIAus {
         background-color: var(--compact-background-color);
         opacity: var(--compact-background-opacity) !important;
     }
 
-    body,
-    .chat-2ZfjoI,
+    /* app */
     .app-2CXKsg,
     .appMount-2yBXZl,
+    /* chat */
     .container-ZMc96U.themed-Hp1KC_,
-    .container-1eFtFS,
-    .container-1NXEtd,
+    .chat-2ZfjoI,
     .wrapper-3HVHpV,
     .wrapper-3HVHpV>*,
-    .privateChannels-oVe7HL,
-    .scroller-WSmht3,
+    /* private channels */
+    .peopleColumn-1wMU14,
     .container-2cd8Mz,
+    /* guildbar */
+    #bd-pub-button,
     .scroller-3X7KbA,
     .wrapper-1_HaEi,
-    .circleIconButton-1VxDrg,
-    .childWrapper-1j_1ub,
     .scrollableContainer-15eg7h,
-    #bd-pub-button,
-    .peopleColumn-1wMU14 {
+    .childWrapper-1j_1ub:not(:hover),
+    .circleIconButton-1VxDrg:not(:hover) {
         background-color: transparent !important;
     }
+
+    /* draggable header */
 
     .container-ZMc96U,
     .children-3xh0VB .iconWrapper-2awDjA>svg {
         -webkit-app-region: drag;
     }
 
-    /*.container-2o3qEW,*/
     .children-3xh0VB::after,
     .form-3gdLxP::before,
     .content-1jQy2l::before,
@@ -194,13 +162,13 @@ body,
         display: none;
     }
 
-    /*minimal user container override*/
+    /* minimal user container override */
     .container-YkUktl .noWrap-hBpHBz {
         display: flex;
         opacity: 1;
     }
 
-    /*settings*/
+    /* settings */
     #app-mount .layer-86YKbF~.layer-86YKbF {
         --settingsmodalwidth: 100%;
         --settingsmodalheight: 100%;
@@ -244,7 +212,16 @@ body,
         width: 0;
     }
 
-    /*toolbar*/
+    .bd-addon-modal {
+        max-height: 100%;
+        height: fit-content;
+    }
+
+    .bd-addon-modal .bd-addon-modal-header {
+        padding-top: var(--header-height);
+    }
+
+    /* toolbar */
     .toolbar-3_r2xA>[aria-label="Hide Member List"],
     .toolbar-3_r2xA>[aria-label="Show Member List"],
     .toolbar-3_r2xA>[aria-label="Pinned Messages"] {
@@ -267,7 +244,7 @@ body,
         width: 100%;
     }
 
-    /*inbox*/
+    /* inbox */
     .toolbar-3_r2xA>[aria-label="Inbox"] {
         position: fixed !important;
         width: 0 !important;
@@ -286,7 +263,7 @@ body,
         max-height: 80vh;
     }
 
-    /*search bar*/
+    /* search bar */
     .searchBar-zdmu7v {
         width: 28px !important;
         background-color: transparent;
@@ -304,12 +281,12 @@ body,
         transition: background-color .25s ease, width .25s ease;
     }
 
-    /*search results*/
+    /* search results */
     .searchResultsWrap-5RVOkx {
         position: absolute;
         top: 4px;
         right: 16px;
-        max-width: 80%;
+        max-width: 90%;
         max-height: 90vh;
         border-radius: 8px;
         -webkit-box-shadow: var(--elevation-high);
@@ -326,7 +303,14 @@ body,
         left: var(--guildbar-width);
     }
 
-    /*channel*/
+    .container-1-h9mY {
+        position: sticky;
+        bottom: 0;
+        background-color: var(--background-secondary);
+        z-index: 1;
+    }
+
+    /* channel */
     .sidebar-1tnWFu {
         position: fixed;
         -webkit-box-shadow: var(--elevation-high);
@@ -346,7 +330,7 @@ body,
         width: var(--compact-channellist-width) !important;
     }
 
-    /*memberlist*/
+    /* memberlist */
     .container-2o3qEW {
         position: fixed;
         right: 0;
@@ -369,15 +353,14 @@ body,
         right: var(--sidebar-width);
     }
 
-
-
-    /*chat text*/
+    /* chat text */
     .messageContent-2t3eCI,
     .username-h_Y3Us,
     .repliedTextPreview-1bvxun,
     .timestamp-p1Df1m,
     .title-17Sve,
-    .pill-2RsI5Q {
+    .pill-2RsI5Q,
+    .title-17SveM {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, calc(1 - var(--compact-background-opacity)));
     }
 
@@ -385,22 +368,23 @@ body,
         filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, calc(1 - var(--compact-background-opacity))));
     }
 
-    /*username*/
-    .contents-2MsGLg .header-2jRmjb {
+    /* username */
+    .cozy-VmLDNB .contents-2MsGLg .header-2jRmjb {
         display: flex;
     }
 
-    .headerText-2z4IhQ {
+    .cozy-VmLDNB .headerText-2z4IhQ {
         min-width: 0;
         white-space: nowrap;
     }
 
-    .username-h_Y3Us {
+    .cozy-VmLDNB .username-h_Y3Us {
         display: block;
         text-overflow: ellipsis;
     }
 
-    .timestampInline-_lS3aK {
+
+    .cozy-VmLDNB .timestampInline-_lS3aK {
         white-space: nowrap;
     }
 
@@ -410,6 +394,7 @@ body,
 
     .channelTextArea-1FufC0 {
         background-color: var(--compact-textarea-color);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, calc(1 - var(--compact-background-opacity)));
     }
 
     .stickerButton-1-nFh2,
@@ -417,7 +402,7 @@ body,
         display: none;
     }
 
-    /*chat scrollbar*/
+    /* chat scrollbar */
     .scroller-kQBbkU::-webkit-scrollbar {
         width: 12px;
     }
@@ -426,7 +411,7 @@ body,
         display: none;
     }
 
-    /*image attachment resize*/
+    /* image attachment resize */
     .imageWrapper-oMkQl4 {
         height: auto !important;
         width: unset !important;
@@ -443,13 +428,13 @@ body,
         display: none;
     }
 
-    /*quick switcher*/
+    /* quick switcher */
     .quickswitcher-pKcM9U {
         top: var(--header-height);
         width: 100vw;
     }
 
-    /*nitro stuck warning*/
+    /* nitro stuck warning */
     .applicationStore-2nk7Lo::before {
         content: "Welcome to Nitro Purgatory! To get out, press Ctrl + K and search for a friend.";
         display: block;
