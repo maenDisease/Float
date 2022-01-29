@@ -215,6 +215,7 @@
     .bd-addon-modal {
         max-height: 100%;
         height: fit-content;
+        max-width:100%;
     }
 
     .bd-addon-modal .bd-addon-modal-header {
