@@ -6,6 +6,7 @@
     --compact-channellist-width: 240px;
     --sidebar-width: 240px;
     --sidebar-hide-width: 40px;
+    --sidebar-hover-speed: 0.5s;
 
     /* Float colors* */
     --compact-background-opacity: 1;
@@ -86,7 +87,7 @@
         padding-left: 35px;
     }
 
-    .toolbar-3_r2xA>[aria-label="Pinned Messages"],
+    .toolbar-3_r2xA>[aria-label="Threads"],
     .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2) {
         display: none;
     }
@@ -107,8 +108,6 @@
     /* other */
     .container-2cd8Mz,
     .container-ZMc96U,
-    .sidebar-1tnWFu,
-    #app-mount .layer-86YKbF~.layer-86YKbF .sidebar-nqHbhN,
     /* guildbar */
     .scroller-3X7KbA,
     .wrapper-1_HaEi,
@@ -193,6 +192,8 @@
         max-width: 56px !important;
         min-width: 56px;
         padding: 60px 6px 60px 15px !important;
+        -webkit-transition: var(--sidebar-hover-speed) ease;
+        transition: var(--sidebar-hover-speed) ease;
     }
 
     #app-mount .layer-86YKbF~.layer-86YKbF .sidebar-nqHbhN:hover {
@@ -233,7 +234,6 @@
         order: 1;
     }
 
-    .toolbar-3_r2xA>[aria-label="Threads"],
     .toolbar-3_r2xA>[aria-label="Notification Settings"],
     .toolbar-3_r2xA>[aria-label="Add Friends to DM"],
     .toolbar-3_r2xA>[href="https://support.discord.com"] {
@@ -244,13 +244,24 @@
         width: 18px;
     }
 
+    .layer-2aCOJ3 {
+        max-width: 80%;
+    }
+
     .messagesPopoutWrap-3zryHW {
-        max-width: 420px;
+        max-width: 100%;
+    }
+
+    .browser-mnQ1T7 {
+        min-height: fit-content;
+        min-width: unset;
         width: 100%;
+        margin-left: 100px;
     }
 
     /* inbox */
     .toolbar-3_r2xA>[aria-label="Inbox"] {
+        right: 16px !important;
         position: fixed !important;
         width: 0 !important;
         padding: 0 !important;
@@ -325,6 +336,8 @@
         height: calc(100% - var(--header-height));
         z-index: 3 !important;
         bottom: 0;
+        -webkit-transition: var(--sidebar-hover-speed) ease;
+        transition: var(--sidebar-hover-speed) ease;
     }
 
     .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu {
@@ -387,7 +400,6 @@
         display: block;
         text-overflow: ellipsis;
     }
-
 
     .cozy-VmLDNB .timestampInline-_lS3aK {
         white-space: nowrap;
