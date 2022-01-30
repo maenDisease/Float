@@ -18,6 +18,7 @@
     --compact-channellist-width: 240px;
     --sidebar-width: 240px;
     --sidebar-hide-width: 40px;
+    --sidebar-hover-speed: 0.5s;
 
     /*Float colors**/
     --compact-background-opacity: 1;
