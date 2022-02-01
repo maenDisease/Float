@@ -284,7 +284,7 @@
         width: unset !important;
     }
 
-    .imageWrapper-oMkQl4 img {
+    .imageWrapper-oMkQl4 img, .wrapper-1FP9YQ {
         position: relative;
         height: auto !important;
         width: unset !important;
@@ -295,6 +295,9 @@
         display: none;
     }
 
+    .backdrop-2ByYRN {
+        z-index: 1;
+    }
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
         border-radius: 8px 0 0 0;
@@ -448,9 +451,9 @@
         display: none;
     }
 
-    .root-g14mjS:not(.gallery-JViwKR) {
+    .root-g14mjS {
         height: fit-content;
-        max-height: 100%;
         max-width: 100%;
+        z-index: 2;
     }
 }
