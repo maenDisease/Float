@@ -453,6 +453,7 @@
 
     .root-g14mjS {
         height: fit-content;
+        max-height: 100%;
         max-width: 100%;
         z-index: 2;
     }
