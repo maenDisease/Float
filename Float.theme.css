@@ -19,8 +19,9 @@
     --header-height: 40px;
     --guildbar-width: 56px;
     --sidebar-width: 240px;
-    
+
     --float-app-opacity: 100%;
+    --float-app-transition-speed: 0.5s;
     --float-channel-width: 240px;
     --float-sidebar-hide-width: 40px;
     --float-guildbar-hover-speed: 0.5s;
