@@ -6,6 +6,7 @@
     --sidebar-width: 240px;
 
     --float-app-opacity: 100%;
+    --float-app-transition-speed: 0.5s;
     --float-channel-width: 240px;
     --float-sidebar-hide-width: 40px;
     --float-guildbar-hover-speed: 0.5s;
@@ -19,20 +20,20 @@
 #app-mount,
 .sidebar-1tnWFu,
 .container-ZMc96U {
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: var(--float-app-transition-speed) ease;
+    transition: var(--float-app-transition-speed) ease;
 }
 
 .guilds-2JjMmN,
 .guilds-2JjMmN div,
 .guilds-2JjMmN svg {
-    -webkit-transition: height 0.5s ease, width 0.5s ease;
-    transition: height 0.5s ease, width 0.5s ease;
+    -webkit-transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
+    transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
 }
 
 .cozy-VmLDNB.wrapper-30-Nkg {
-    -webkit-transition: padding-left 0.5s ease;
-    transition: padding-left 0.5s ease;
+    -webkit-transition: padding-left var(--float-app-transition-speed) ease;
+    transition: padding-left var(--float-app-transition-speed) ease;
 }
 
 @media (min-width: 400px) {
@@ -79,8 +80,8 @@
 
     .cozy-VmLDNB .repliedMessage-3Z6XBG:before,
     .contents-2MsGLg img {
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
+        -webkit-transition: var(--float-app-transition-speed) ease;
+        transition: var(--float-app-transition-speed) ease;
     }
 
     .cozy-VmLDNB .repliedMessage-3Z6XBG:before {
@@ -93,8 +94,8 @@
 
     .cozy-VmLDNB.wrapper-30-Nkg {
         padding-left: 35px;
-        -webkit-transition: padding-left 0.5s ease;
-        transition: padding-left 0.5s ease;
+        -webkit-transition: padding-left var(--float-app-transition-speed) ease;
+        transition: padding-left var(--float-app-transition-speed) ease;
     }
 
     .topic-11NuQZ.expandable-3CaLeS,
@@ -110,15 +111,15 @@
     /* transition */
     #app-mount,
     .container-ZMc96U {
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
+        -webkit-transition: var(--float-app-transition-speed) ease;
+        transition: var(--float-app-transition-speed) ease;
     }
 
     .guilds-2JjMmN,
     .guilds-2JjMmN div,
     .guilds-2JjMmN svg {
-        -webkit-transition: height 0.5s ease, width 0.5s ease;
-        transition: height 0.5s ease, width 0.5s ease;
+        -webkit-transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
+        transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
     }
 
     /* transparency */
