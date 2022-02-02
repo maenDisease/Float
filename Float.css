@@ -279,12 +279,14 @@
     }
 
     /* image attachment resize */
-    .imageWrapper-oMkQl4 {
+    .imageWrapper-oMkQl4,
+    .embedVideo-2ixt5A {
         height: auto !important;
         width: unset !important;
     }
 
-    .imageWrapper-oMkQl4 img, .wrapper-1FP9YQ {
+    .imageWrapper-oMkQl4 img,
+    .wrapper-1FP9YQ {
         position: relative;
         height: auto !important;
         width: unset !important;
@@ -298,6 +300,7 @@
     .backdrop-2ByYRN {
         z-index: 1;
     }
+
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
         border-radius: 8px 0 0 0;
@@ -313,9 +316,9 @@
         box-shadow: var(--elevation-high);
         border-radius: 0 !important;
         width: 0 !important;
-        height: calc(100% - 22px - var(--header-height));
+        max-height: calc(100% - 22px - var(--header-height));
         z-index: 3 !important;
-        bottom: 0;
+        top: calc(22px + var(--header-height));
         -webkit-transition: var(--float-guildbar-hover-speed) ease;
         transition: var(--float-guildbar-hover-speed) ease;
     }
@@ -338,16 +341,12 @@
     }
 
     /* memberlist */
-    .container-2o3qEW {
+    .membersWrap-3NUR2t {
         position: fixed;
         right: 0;
         -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
         box-shadow: var(--elevation-stroke), var(--elevation-high);
         z-index: 2 !important;
-    }
-
-    .members-3WRCEx {
-        border-radius: 8px 0 0 0;
     }
 
     .iconWrapper-2awDjA[aria-label="Hide Member List"]::before {
@@ -422,13 +421,18 @@
     }
 
     .contentRegion-3HkfJJ {
-        padding-left: 56px;
+        padding-left: calc(56px + 8px) !important;
     }
 
     .contentColumn-1C7as6,
     .customColumn-2n-oKU {
         min-width: unset;
         width: 0;
+    }
+
+    .contentColumnDefault-3eyv5o {
+        position: relative;
+        padding: 60px 20px 80px !important;
     }
 
     .header-1zd7se {
@@ -456,5 +460,11 @@
         max-height: 100%;
         max-width: 100%;
         z-index: 2;
+    }
+
+    /*dracula*/
+    .layers-OrUESM>.layer-86YKbF:nth-child(2) {
+        --width2: 100%;
+        --height2: 100%;
     }
 }
