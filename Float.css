@@ -279,14 +279,12 @@
     }
 
     /* image attachment resize */
-    .imageWrapper-oMkQl4,
-    .embedVideo-2ixt5A {
+    .imageWrapper-oMkQl4{
         height: auto !important;
         width: unset !important;
     }
 
-    .imageWrapper-oMkQl4 img,
-    .wrapper-1FP9YQ {
+    .imageWrapper-oMkQl4 img {
         position: relative;
         height: auto !important;
         width: unset !important;
@@ -297,9 +295,6 @@
         display: none;
     }
 
-    .backdrop-2ByYRN {
-        z-index: 1;
-    }
 
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
@@ -459,7 +454,6 @@
         height: fit-content;
         max-height: 100%;
         max-width: 100%;
-        z-index: 2;
     }
 
     /*dracula*/
