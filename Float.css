@@ -71,8 +71,8 @@
         left: 56px;
     }
 
-    html:not(.platform-osx) .chat-2ZfjoI {
-        border-radius: 0 0 0 0 !important;
+    .base-2jDfDU {
+        border-radius: 0 !important;
     }
 }
 
@@ -302,7 +302,8 @@
     }
 
     html.platform-osx .sidebar-1tnWFu {
-        height: calc(100% - var(--header-height));
+        max-height: calc(100% - var(--header-height));
+        top: var(--header-height);
     }
 
     .sidebar-1tnWFu {
