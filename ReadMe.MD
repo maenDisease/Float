@@ -40,11 +40,11 @@ Join my [Support Server](https://discord.gg/BpwYF5UyHu) if you need help with in
 <tr>
 <td align="center">
     <img src="https://avatars.githubusercontent.com/u/73869003?v=4" width="100px;" alt="Cedrick Zedd"/><br />
-    <a href="https://github.com/cedrickzedd" target="_blank" rel="noreferrer noopener"><strong>Cedrick Zedd</strong></a><br />Owner</a>
+    <a href="https://github.com/cedrickzedd" target="_blank" rel="noreferrer noopener"><strong>Cedrick Zedd</strong></a><br />Float Guy</a>
 </td>
 <td align="center">
     <img src="https://avatars.githubusercontent.com/u/90428263?v=4" width="100px;" alt="maenDisease"/><br />
-    <a href="https://github.com/maenDisease" target="_blank" rel="noreferrer noopener"><strong>maenDisease</strong></a><br />Maintainer</a>
+    <a href="https://github.com/maenDisease" target="_blank" rel="noreferrer noopener"><strong>maenDisease</strong></a><br />Owner</a>
 </td>
 </tr>
 </table>
