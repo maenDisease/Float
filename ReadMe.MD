@@ -5,7 +5,10 @@
 
 ## About
 
-Float is a theme for [Discord](https://discord.com/) with the purpose of improving Discord's limited window size usage by transforming the client into a compact version when the window size is reduced. The theme is best used with [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys), allowing the `Always On Top` feature.
+Float is a practical compact theme for [Discord](https://discord.com/). It is activated when the window is resized thinner than Discord's minimum size. 
+
+The theme can be used with other [BetterDiscord](https://betterdiscord.app/) themes.
+Float uses [MinimalMode](https://github.com/SmolAlli/Themes/tree/main/MinimalMode) by [SmolAlli](https://github.com/SmolAlli) and [SettingsIcons](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css) by [mwittrien](https://github.com/mwittrien)
 
 ## Installing Float
 
@@ -17,9 +20,10 @@ In BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove 
 </p>
 
 ### Always on Top function
-- Install [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys).
 
-In Powertoys settings, enable `Always On Top` and set a keybind: Default: `⊞ Win + CTRL + T`.
+#### Windows
+- Install [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys).
+- In Powertoys settings, enable `Always On Top` and set a keybind: Default: `⊞ Win + CTRL + T`.
 
 ## Support
 
@@ -32,7 +36,7 @@ Join the [Discord support server](https://discord.gg/BpwYF5UyHu) for Float assis
 </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/U5tJYqa.png" alt="Float Preview"/>
+  <img src="https://i.imgur.com/nTvfNUO.png" alt="Float Preview"/>
 </p>
 
 <p align="center">
