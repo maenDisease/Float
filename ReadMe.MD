@@ -13,7 +13,7 @@ Float is a theme for [Discord](https://discord.com/) with the purpose of improvi
 - Install [BetterDiscord](https://betterdiscord.app/).
 - [Download Float from the raw](https://cedrickzedd.github.io/Float/Float.theme.css). Right click the page and click `Save as`, then move the `Float.theme.css` file into the BetterDiscord theme directory. Enable the theme.
 
-In the BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove Minimum Size`. Optional: enable `Enable Transparency` to use background transparency.
+In the BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove Minimum Size`. Optional: enable `Enable Transparency` to use app transparency.
 
 <p align="center">
   <img src="https://i.imgur.com/l292lJE.png" alt="Remove Minimum Size png"/>
