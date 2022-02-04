@@ -104,6 +104,51 @@
         display: none;
     }
 
+    /* emoji picker */
+    .categoryList-2qRrlj {
+        height: 107% !important;
+        transform: rotate(90deg) scaleY(-1);
+        left: 375px;
+        right: unset;
+        bottom: -1px;
+        transform-origin: bottom right;
+        border-radius: 0;
+    }
+
+    .emojiPickerInExpressionPicker-2nOwH8 .categoryList-2qRrlj {
+        top: unset !important;
+    }
+
+    #emoji-picker-tab-panel .wrapper-22rqw6 .listItems-6eZzQ1>div,
+    #emoji-picker-tab-panel .unicodeShortcut-3N8oDe {
+        transform: rotate(90deg) scaleY(-1);
+    }
+
+    .categoryItemGuildCategory-3mvXlo svg {
+        width: 24px;
+    }
+
+    .categoryItemGuildCategory-3mvXlo {
+        margin: 0 !important;
+    }
+
+    .emojiPicker-6YCk8a .inspector-DFKXwB {
+        display: none;
+    }
+
+    .categoryList-2qRrlj .guildCategorySeparator-3QYkij {
+        display: none;
+    }
+
+    .drawerSizingWrapper-1txdWG,
+    .emojiPickerInExpressionPicker-2nOwH8 {
+        width: 250px !important;
+    }
+
+    #emoji-picker-tab-panel .emojiPicker-6YCk8a {
+        grid-template-columns: 0 auto;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -279,7 +324,7 @@
     }
 
     /* image attachment resize */
-    .imageWrapper-oMkQl4{
+    .imageWrapper-oMkQl4 {
         height: auto !important;
         width: unset !important;
     }
@@ -294,7 +339,6 @@
     .imageDetails-1t6Zms {
         display: none;
     }
-
 
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
