@@ -577,6 +577,7 @@
         background-color: var(--background-tertiary);
     }
 
+    .customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:focus-within,
     .customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:hover {
         opacity: 1;
     }
