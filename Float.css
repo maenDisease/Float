@@ -173,9 +173,14 @@
     }
 
     /* draggable header */
+    .guilds-2JjMmN,
     .container-ZMc96U,
     .children-3xh0VB .iconWrapper-2awDjA>svg {
         -webkit-app-region: drag;
+    }
+
+    .listItem-3SmSlK {
+        -webkit-app-region: no-drag;
     }
 
     .children-3xh0VB::after,
