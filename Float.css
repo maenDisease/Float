@@ -179,7 +179,8 @@
         -webkit-app-region: drag;
     }
 
-    .listItem-3SmSlK {
+    .listItem-3SmSlK,
+    .show-sessions-logs {
         -webkit-app-region: no-drag;
     }
 
