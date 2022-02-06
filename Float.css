@@ -269,7 +269,7 @@
         top: 4px;
         right: 16px;
         max-width: 90%;
-        max-height: 90vh;
+        max-height: 80%;
         border-radius: 8px;
         -webkit-box-shadow: var(--elevation-high);
         box-shadow: var(--elevation-high);
