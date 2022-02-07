@@ -8,7 +8,7 @@
     --float-app-opacity: 100%;
     --float-app-transition-speed: 0.5s;
     --float-channel-width: 240px;
-    --float-initial-memberlist-height: 100%;
+    --float-initial-memberlist-height: fit-content;
     --float-sidebar-hide-width: 40px;
     --float-guildbar-hover-speed: 0.5s;
 }
