@@ -407,7 +407,8 @@
         width: var(--float-channel-width) !important;
     }
 
-    .sidebar-1tnWFu .header-3OsQeK>* {
+    .sidebar-1tnWFu .header-3OsQeK>*,
+    .sidebar-1tnWFu .unreadBottom-3Ojk6R>div {
         overflow: hidden;
     }
 
