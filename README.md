@@ -25,7 +25,7 @@ In BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove 
 
 #### BetterDiscord
 - Install the plugin [AlwaysOnTop](https://betterdiscord.app/plugin/AlwaysOnTop) by [qwerasd205](https://github.com/qwerasd205).
-- Toggle the function by pressing `CTRL + ⊞Win/⌘Cmd + T`.
+- Toggle the function by pressing `CTRL/⌘cmd + F11`.
 
 #### Windows
 - Install [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys).
