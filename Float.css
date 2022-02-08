@@ -21,8 +21,7 @@
 /* 700 */
 #app-mount,
 .sidebar-1tnWFu,
-.container-ZMc96U,
-.membersWrap-3NUR2t {
+.container-ZMc96U {
     -webkit-transition: var(--float-app-transition-speed) ease;
     transition: var(--float-app-transition-speed) ease;
 }
@@ -39,7 +38,16 @@
     transition: padding-left var(--float-app-transition-speed) ease;
 }
 
+@media (min-width: 700px) {
+
+    .membersWrap-3NUR2t,
+    .ChannelDms-channelmembers-wrap {
+        min-height: 100%;
+    }
+}
+
 @media (min-width: 400px) {
+
     .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
         transform: scale(1);
         width: 40px;
@@ -164,8 +172,7 @@
 
     /* transition */
     #app-mount,
-    .container-ZMc96U,
-    .membersWrap-3NUR2t {
+    .container-ZMc96U {
         -webkit-transition: var(--float-app-transition-speed) ease;
         transition: var(--float-app-transition-speed) ease;
     }
@@ -190,7 +197,9 @@
     }
 
     .listItem-3SmSlK>*,
-    .toolbar-3_r2xA>* {
+    .toolbar-3_r2xA>*,
+    .sidebarRegion-1VBisG,
+    .closeButton-PCZcma {
         -webkit-app-region: no-drag;
     }
 
@@ -397,34 +406,30 @@
     }
 
     /* memberlist */
+    .members-3WRCEx {
+        height: auto;
+        max-height: 100vh;
+    }
+
     .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t,
     .ChannelDms-channelmembers-wrap {
-        position: fixed;
+        position: absolute;
         right: 0;
-        min-width: var(--sidebar-width);
-        min-height: 135px;
         resize: vertical;
         overflow: hidden;
+        height: var(--float-initial-memberlist-height);
+        min-height: 135px;
+        max-height: 80%;
         -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
         box-shadow: var(--elevation-stroke), var(--elevation-high);
         z-index: 2 !important;
-    }
-
-    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t {
-        height: calc(var(--float-initial-memberlist-height) - 44px);
-        max-height: calc(100% - 160px - 44px);
-    }
-
-    .ChannelDms-channelmembers-wrap {
-        height: calc(var(--float-initial-memberlist-height));
-        max-height: calc(100% - 160px);
     }
 
     .iconWrapper-2awDjA[aria-label="Hide Member List"]::before {
         position: fixed;
         content: '';
         width: var(--float-sidebar-hide-width);
-        height: 100%;
+        height: 80%;
         top: var(--header-height);
         right: var(--sidebar-width);
     }
@@ -633,7 +638,7 @@
 
 @media (max-height: 500px) {
     .channelTextArea-1VQBuV {
-        display:none;
+        display: none;
     }
 
     .chatContent-3KubbW:hover .channelTextArea-1VQBuV {
