@@ -371,8 +371,9 @@
         border-radius: 8px 0 0 0;
     }
 
-    html.platform-osx .container-1NXEtd {
-        max-height: calc(100% - var(--header-height));
+    html.platform-osx .container-1NXEtd,
+    html.platform-osx .privateChannels-oVe7HL {
+        max-height: calc(100% - var(--header-height) - 100px);
         top: var(--header-height);
     }
 
@@ -390,11 +391,14 @@
         box-shadow: var(--elevation-high);
         border-radius: 0 !important;
         width: 0 !important;
-        max-height: calc(100% - var(--header-height) - 22px);
+        min-height: 40px;
+        max-height: calc(100% - var(--header-height) - 22px - 100px);
+        resize: vertical;
+        overflow: hidden;
         top: calc(var(--header-height) + 22px);
         z-index: 2 !important;
-        -webkit-transition: var(--float-guildbar-hover-speed) ease;
-        transition: var(--float-guildbar-hover-speed) ease;
+        -webkit-transition: width var(--float-guildbar-hover-speed) ease;
+        transition: width var(--float-guildbar-hover-speed) ease;
     }
 
     .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu>.container-1NXEtd,
@@ -403,7 +407,9 @@
     }
 
     .sidebar-1tnWFu .container-1NXEtd:hover,
-    .sidebar-1tnWFu .privateChannels-oVe7HL:hover {
+    .sidebar-1tnWFu .container-1NXEtd:active,
+    .sidebar-1tnWFu .privateChannels-oVe7HL:hover,
+    .sidebar-1tnWFu .privateChannels-oVe7HL:active {
         width: var(--float-channel-width) !important;
     }
 
@@ -419,13 +425,18 @@
     }
 
     .wrapper-1_HaEi:hover+.base-2jDfDU .sidebar-1tnWFu .header-3OsQeK,
-    .sidebar-1tnWFu .container-1NXEtd:hover .header-3OsQeK {
+    .sidebar-1tnWFu .container-1NXEtd:hover .header-3OsQeK,
+    .sidebar-1tnWFu .container-1NXEtd:active .header-3OsQeK {
         padding: 0 16px;
         -webkit-transition: var(--float-guildbar-hover-speed) ease;
         transition: var(--float-guildbar-hover-speed) ease;
     }
 
     /* user panel */
+    .tree-3agP2X {
+        height: calc(100% - 55px);
+    }
+
     .wrapper-1gVUIN.noChat-2UYgeE {
         z-index: 0;
     }
@@ -446,7 +457,8 @@
 
     .panels-3wFtMD .flex-2S1XBF,
     .panels-3wFtMD .container-1zzFcN,
-    .panels-3wFtMD .container-6sXIoE {
+    .panels-3wFtMD .container-6sXIoE,
+    .panels-3wFtMD .panel-2ZFCRb {
         background-color: var(--background-floating);
         border-radius: 5px;
         border: none;
@@ -454,23 +466,36 @@
         box-shadow: var(--elevation-high);
     }
 
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU .badge-370Op6 {
+        background-color: var(--background-floating);
+    }
+
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU {
+        max-width: 40px;
+    }
+
     .panels-3wFtMD .container-6sXIoE {
         bottom: 12px !important;
         max-width: 56px;
     }
 
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover,
     .panels-3wFtMD .container-6sXIoE:hover {
         bottom: 12px !important;
         max-width: unset;
     }
 
-    .container-6sXIoE.withTimeline-824fT_ .flex-2S1XBF,
-    .container-6sXIoE.withTimeline-824fT_ .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU .actions-zk2vB_,
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU .info-88fTUI,
+    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .flex-2S1XBF,
+    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
         display: none;
     }
 
-    .container-6sXIoE.withTimeline-824fT_:hover .flex-2S1XBF,
-    .container-6sXIoE.withTimeline-824fT_:hover .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover .actions-zk2vB_,
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover .info-88fTUI,
+    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .flex-2S1XBF,
+    .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
         display: flex;
     }
 
@@ -496,8 +521,7 @@
         display: flex;
     }
 
-    .panels-3wFtMD .button-1EGGcP.buttonColor-3bP3fX,
-    .panels-3wFtMD .button-1EGGcP .buttonColor-3bP3fX {
+    .panels-3wFtMD .button-1EGGcP.buttonColor-3bP3fX:not(.buttonActive-Uc1jHx) {
         background: none;
     }
 
