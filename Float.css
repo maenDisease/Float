@@ -39,11 +39,83 @@
     transition: padding-left var(--float-app-transition-speed) ease;
 }
 
+@media (width: 940px) {
+
+    .bd-addon-list #Float-card .bd-addon-header::before {
+        content: '';
+        background-image: url(https://i.imgur.com/nlCohIG.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        margin: 0 0 70px 240px;
+        width: 36px;
+        height: 47px;
+        background-size: 36px;
+        z-index: 999;
+    }
+
+    .bd-addon-list #Float-card:hover .bd-addon-header::before {
+        display: none;
+    }
+
+    .bd-addon-list #Float-card .bd-description::before {
+        position: absolute;
+        content: "Window not thin enough.";
+        word-break: break-word;
+        padding: 16px 0;
+        max-width: 175px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--header-secondary);
+    }
+
+    .bd-addon-list #Float-card::before {
+        content: '';
+        background-image: url(https://i.imgur.com/SqLL5VQ.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: fixed;
+        top: var(--header-height);
+        right: 100px;
+        width: 600px;
+        height: 144px;
+        margin: auto;
+        background-size: 600px;
+        border-radius: 8px;
+        border: 1px solid #f04747;
+        z-index: 999;
+        transform: perspective(500px) translateZ(-500px);
+        opacity: 0;
+        transition: transform 0.05s ease-in, opacity 0.05s ease-out;
+    }
+
+    .bd-addon-list #Float-card:hover::before {
+        transform: perspective(500px) translateZ(0);
+        opacity: 1;
+        transition: transform 0.05s ease-in, opacity 0.05s ease-out;
+    }
+}
+
 @media (min-width: 700px) {
 
     .membersWrap-3NUR2t,
     .ChannelDms-channelmembers-wrap {
         min-height: 100%;
+    }
+
+    .bd-addon-list #Float-card .bd-description::before {
+        position: absolute;
+        content: "Window not thin enough.";
+        word-break: break-word;
+        padding: 16px 0;
+        max-width: 175px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--header-secondary);
     }
 }
 
@@ -115,6 +187,10 @@
     .toolbar-3_r2xA>[aria-label="Threads"],
     .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2) {
         display: none;
+    }
+
+    .bd-addon-list.bd-grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
     /* pin icon */
