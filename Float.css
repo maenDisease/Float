@@ -457,7 +457,7 @@
 
     /* image attachment resize */
 
-    .embedWrapper-1MtIDg,
+    /* .embedWrapper-1MtIDg,
     .embedWrapper-1MtIDg>.imageWrapper-oMkQl4,
     .embedWrapper-1MtIDg>.grid-1aWVsE>.imageWrapper-oMkQl4 {
         height: auto !important;
@@ -471,7 +471,7 @@
         height: auto !important;
         width: unset !important;
         max-width: 100%;
-    }
+    } */
 
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
