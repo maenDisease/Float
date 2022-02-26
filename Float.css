@@ -689,7 +689,7 @@
     }
 
     /* nitro stuck warning */
-    .applicationStore-2nk7Lo::before {
+    .applicationStore-2nk7Lo .premiumContainer-3GGa8Q::before {
         content: "Welcome to Nitro Purgatory! To get out, press Ctrl + K and search for a friend.";
         display: block;
         position: absolute;
