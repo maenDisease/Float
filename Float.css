@@ -473,6 +473,32 @@
         max-width: 100%
     }
 
+    .focusLock-2tveLW>.fullscreenOnMobile-ixj0e3 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        outline-offset: -1px;
+        pointer-events: none;
+    }
+
+    .focusLock-2tveLW>.fullscreenOnMobile-ixj0e3>div {
+        pointer-events: auto;
+    }
+
+    .operations-3V47CY {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    .wrapper-2bCXfR>.downloadLink-1OAglv {
+        width: max-content;
+    }
+
     /* channel */
     html:not(.platform-osx) .base-2jDfDU {
         border-radius: 8px 0 0 0;
@@ -666,15 +692,6 @@
         -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
         box-shadow: var(--elevation-stroke), var(--elevation-high);
         z-index: 1 !important;
-    }
-
-    .iconWrapper-2awDjA[aria-label="Hide Member List"]::before {
-        position: fixed;
-        content: '';
-        width: var(--float-sidebar-hide-width);
-        height: 80%;
-        top: var(--header-height);
-        right: var(--sidebar-width);
     }
 
     /* quick switcher */
