@@ -42,7 +42,11 @@
 @media (width: 940px) {
 
     .bd-addon-list #Float-card .bd-addon-header::before,
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]::before {
         content: '';
         background-image: url(https://i.imgur.com/nlCohIG.gif);
         background-position: center;
@@ -60,7 +64,11 @@
         margin: 0 0 70px 240px;
     }
 
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]::before {
         transform: translate(30%, -40%);
         animation: warningVisibility 0s 1.5s forwards;
         visibility: hidden;
@@ -73,12 +81,20 @@
     }
 
     .bd-addon-list #Float-card:hover .bd-addon-header::before,
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]:hover::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]:hover::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]:hover::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]:hover::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]:hover::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]:hover::before {
         display: none;
     }
 
     .bd-addon-list #Float-card::before,
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]>div::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]>div::before {
         content: '';
         background-image: url(https://i.imgur.com/SqLL5VQ.png);
         background-position: center;
@@ -98,7 +114,11 @@
     }
 
     .bd-addon-list #Float-card:hover::before,
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]:hover>div::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]:hover>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]:hover>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]:hover>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]:hover>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]:hover>div::before {
         transform: perspective(500px) translateZ(0);
         opacity: 1;
         transition: transform 0.05s ease-in, opacity 0.05s ease-out;
@@ -110,7 +130,11 @@
         margin: auto;
     }
 
-    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]>div::before {
+    .panels-3wFtMD .button-12Fmur[aria-label="User Settings"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Benutzereinstellungen"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Ustawienia użytkownika"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="Користувацькі налаштування"]>div::before,
+    .panels-3wFtMD .button-12Fmur[aria-label="ユーザー設定"]>div::before {
         left: 100px;
         bottom: 100px;
     }
@@ -214,6 +238,9 @@
 
     .topic-11NuQZ.expandable-3CaLeS,
     .toolbar-3_r2xA>[aria-label="Threads"],
+    .toolbar-3_r2xA>[aria-label="Wątki"],
+    .toolbar-3_r2xA>[aria-label="Гілки"],
+    .toolbar-3_r2xA>[aria-label="スレッド"],
     .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2) {
         display: none;
     }
@@ -321,13 +348,33 @@
     /* toolbar */
     .toolbar-3_r2xA>[aria-label="Hide Member List"],
     .toolbar-3_r2xA>[aria-label="Show Member List"],
-    .toolbar-3_r2xA>[aria-label="Pinned Messages"] {
+    .toolbar-3_r2xA>[aria-label="Pinned Messages"],
+    .toolbar-3_r2xA>[aria-label="Mitgliederliste ausblenden"],
+    .toolbar-3_r2xA>[aria-label="Mitgliederliste anzeigen"],
+    .toolbar-3_r2xA>[aria-label="Angepinnte Nachrichten"],
+    .toolbar-3_r2xA>[aria-label="Ukryj listę członków"],
+    .toolbar-3_r2xA>[aria-label="Pokaż listę członków"],
+    .toolbar-3_r2xA>[aria-label="Przypięte wiadomości"],
+    .toolbar-3_r2xA>[aria-label="Сховати список учасників"],
+    .toolbar-3_r2xA>[aria-label="Показати список учасників"],
+    .toolbar-3_r2xA>[aria-label="Закріплені повідомлення"],
+    .toolbar-3_r2xA>[aria-label="メンバーリストを非表示"],
+    .toolbar-3_r2xA>[aria-label="メンバーリストを表示"],
+    .toolbar-3_r2xA>[aria-label="ピン留めされたメッセージ"] {
         order: 1;
     }
 
+    .toolbar-3_r2xA>[href="https://support.discord.com"],
     .toolbar-3_r2xA>[aria-label="Notification Settings"],
     .toolbar-3_r2xA>[aria-label="Add Friends to DM"],
-    .toolbar-3_r2xA>[href="https://support.discord.com"] {
+    .toolbar-3_r2xA>[aria-label="Benachrichtigungseinstellungen"],
+    .toolbar-3_r2xA>[aria-label="Freunde zu Direktnachricht hinzufügen"],
+    .toolbar-3_r2xA>[aria-label="Ustawienia powiadomień"],
+    .toolbar-3_r2xA>[aria-label="Dodaj znajomych do rozmowy prywatnej"],
+    .toolbar-3_r2xA>[aria-label="Параметри сповіщень"],
+    .toolbar-3_r2xA>[aria-label="Додати друзів до ПП"],
+    .toolbar-3_r2xA>[aria-label="通知設定"],
+    .toolbar-3_r2xA>[aria-label="DMにフレンドを追加"] {
         display: none;
     }
 
@@ -351,7 +398,11 @@
     }
 
     /* inbox */
-    .toolbar-3_r2xA>[aria-label="Inbox"] {
+    .toolbar-3_r2xA>[aria-label="Inbox"],
+    .toolbar-3_r2xA>[aria-label="Posteingang"],
+    .toolbar-3_r2xA>[aria-label="Skrzynka odbiorcza"],
+    .toolbar-3_r2xA>[aria-label="Вхідні"],
+    .toolbar-3_r2xA>[aria-label="受信ボックス"] {
         right: 16px !important;
         position: fixed !important;
         width: 0 !important;
@@ -360,7 +411,15 @@
     }
 
     .toolbar-3_r2xA>[aria-label="Inbox"]>*,
-    .toolbar-3_r2xA>[aria-label="Inbox"]::before {
+    .toolbar-3_r2xA>[aria-label="Inbox"]::before,
+    .toolbar-3_r2xA>[aria-label="Posteingang"]>*,
+    .toolbar-3_r2xA>[aria-label="Posteingang"]::before,
+    .toolbar-3_r2xA>[aria-label="Skrzynka odbiorcza"]>*,
+    .toolbar-3_r2xA>[aria-label="Skrzynka odbiorcza"]::before,
+    .toolbar-3_r2xA>[aria-label="Вхідні"]>*,
+    .toolbar-3_r2xA>[aria-label="Вхідні"]::before,
+    .toolbar-3_r2xA>[aria-label="受信ボックス"]>*,
+    .toolbar-3_r2xA>[aria-label="受信ボックス"]::before {
         display: none !important;
     }
 
@@ -654,6 +713,14 @@
 
     .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Noise Suppression powered by Krisp"],
     .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Disconnect"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Hintergrundgeräusch-Unterdrückung von Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Verbindung trennen"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Tłumienie zakłóceń technologią Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Rozłącz"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Поглинання шуму від Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Відключитися"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="Krispによる\30CEイズ抑制"],
+    .panels-3wFtMD .wrapper-3Hk9OB [aria-label="切断"],
     .panels-3wFtMD .wrapper-3Hk9OB .actionButtons-2vEOUh,
     .panels-3wFtMD .nameTag-sc-gpq {
         display: none;
@@ -661,6 +728,14 @@
 
     .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Noise Suppression powered by Krisp"],
     .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Disconnect"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Hintergrundgeräusch-Unterdrückung von Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Verbindung trennen"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Tłumienie zakłóceń technologią Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Rozłącz"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Поглинання шуму від Krisp"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Відключитися"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="Krispによる\30CEイズ抑制"],
+    .panels-3wFtMD .wrapper-3Hk9OB:hover [aria-label="切断"],
     .panels-3wFtMD .wrapper-3Hk9OB:hover .actionButtons-2vEOUh {
         display: flex;
     }
