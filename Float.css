@@ -1,3 +1,5 @@
+
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/diseaseControl.css);
 @import url(https://smolalli.github.io/Themes/MinimalMode/source.css) (max-width: 700px);
 
 :root {
@@ -213,11 +215,13 @@
     }
 
     .topic-11NuQZ.expandable-3CaLeS,
-    .toolbar-3_r2xA>[aria-label="Threads"],
-    .toolbar-3_r2xA>[aria-label="Wątki"],
-    .toolbar-3_r2xA>[aria-label="Гілки"],
-    .toolbar-3_r2xA>[aria-label="スレッド"],
-    .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2) {
+    .buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2),
+    .toolbar-3_r2xA>:where(
+        [aria-label="Threads"],
+        [aria-label="Wątki"],
+        [aria-label="Гілки"],
+        [aria-label="スレッド"]
+    ) {
         display: none;
     }
 
@@ -299,7 +303,7 @@
     }
 
     /* draggable header */
-    .guilds-2JjMmN,
+    .guilds-2JjMmN:not(.content-Pph8t6),
     .container-ZMc96U,
     .children-3xh0VB .iconWrapper-2awDjA>svg {
         -webkit-app-region: drag;
@@ -307,6 +311,7 @@
 
     .listItem-3SmSlK>*,
     .toolbar-3_r2xA>*,
+    .topicClickTarget-2GMi99,
     .sidebarRegion-1VBisG,
     .closeButton-PCZcma {
         -webkit-app-region: no-drag;
@@ -322,35 +327,39 @@
     }
 
     /* toolbar */
-    .toolbar-3_r2xA>[aria-label="Hide Member List"],
-    .toolbar-3_r2xA>[aria-label="Show Member List"],
-    .toolbar-3_r2xA>[aria-label="Pinned Messages"],
-    .toolbar-3_r2xA>[aria-label="Mitgliederliste ausblenden"],
-    .toolbar-3_r2xA>[aria-label="Mitgliederliste anzeigen"],
-    .toolbar-3_r2xA>[aria-label="Angepinnte Nachrichten"],
-    .toolbar-3_r2xA>[aria-label="Ukryj listę członków"],
-    .toolbar-3_r2xA>[aria-label="Pokaż listę członków"],
-    .toolbar-3_r2xA>[aria-label="Przypięte wiadomości"],
-    .toolbar-3_r2xA>[aria-label="Сховати список учасників"],
-    .toolbar-3_r2xA>[aria-label="Показати список учасників"],
-    .toolbar-3_r2xA>[aria-label="Закріплені повідомлення"],
-    .toolbar-3_r2xA>[aria-label="メンバーリストを非表示"],
-    .toolbar-3_r2xA>[aria-label="メンバーリストを表示"],
-    .toolbar-3_r2xA>[aria-label="ピン留めされたメッセージ"] {
+    .toolbar-3_r2xA>:where(
+        [aria-label="Hide Member List"],
+        [aria-label="Show Member List"],
+        [aria-label="Pinned Messages"],
+        [aria-label="Mitgliederliste ausblenden"],
+        [aria-label="Mitgliederliste anzeigen"],
+        [aria-label="Angepinnte Nachrichten"],
+        [aria-label="Ukryj listę członków"],
+        [aria-label="Pokaż listę członków"],
+        [aria-label="Przypięte wiadomości"],
+        [aria-label="Сховати список учасників"],
+        [aria-label="Показати список учасників"],
+        [aria-label="Закріплені повідомлення"],
+        [aria-label="メンバーリストを非表示"],
+        [aria-label="メンバーリストを表示"],
+        [aria-label="ピン留めされたメッセージ"]
+    ) {
         order: 1;
     }
 
-    .toolbar-3_r2xA>[href="https://support.discord.com"],
-    .toolbar-3_r2xA>[aria-label="Notification Settings"],
-    .toolbar-3_r2xA>[aria-label="Add Friends to DM"],
-    .toolbar-3_r2xA>[aria-label="Benachrichtigungseinstellungen"],
-    .toolbar-3_r2xA>[aria-label="Freunde zu Direktnachricht hinzufügen"],
-    .toolbar-3_r2xA>[aria-label="Ustawienia powiadomień"],
-    .toolbar-3_r2xA>[aria-label="Dodaj znajomych do rozmowy prywatnej"],
-    .toolbar-3_r2xA>[aria-label="Параметри сповіщень"],
-    .toolbar-3_r2xA>[aria-label="Додати друзів до ПП"],
-    .toolbar-3_r2xA>[aria-label="通知設定"],
-    .toolbar-3_r2xA>[aria-label="DMにフレンドを追加"] {
+    .toolbar-3_r2xA>:where(
+        [href="https://support.discord.com"],
+        [aria-label="Notification Settings"],
+        [aria-label="Add Friends to DM"],
+        [aria-label="Benachrichtigungseinstellungen"],
+        [aria-label="Freunde zu Direktnachricht hinzufügen"],
+        [aria-label="Ustawienia powiadomień"],
+        [aria-label="Dodaj znajomych do rozmowy prywatnej"],
+        [aria-label="Параметри сповіщень"],
+        [aria-label="Додати друзів до ПП"],
+        [aria-label="通知設定"],
+        [aria-label="DMにフレンドを追加"]
+    ) {
         display: none;
     }
 
@@ -541,8 +550,10 @@
         transition: var(--float-guildbar-hover-speed) ease;
     }
 
-    .sidebar-1tnWFu .container-1NXEtd,
-    .sidebar-1tnWFu .privateChannels-oVe7HL {
+    .sidebar-1tnWFu :where(
+        .container-1NXEtd,
+        .privateChannels-oVe7HL
+    ) {
         position: fixed !important;
         -webkit-box-shadow: var(--elevation-high);
         box-shadow: var(--elevation-high);
@@ -558,15 +569,17 @@
         transition: width var(--float-guildbar-hover-speed) ease;
     }
 
-    .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu>.container-1NXEtd,
-    .wrapper-1_HaEi:hover+.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu>.privateChannels-oVe7HL {
+    .wrapper-1_HaEi:hover~.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu>.container-1NXEtd,
+    .wrapper-1_HaEi:hover~.base-2jDfDU>.content-1SgpWY>.sidebar-1tnWFu>.privateChannels-oVe7HL {
         width: var(--float-channel-width) !important;
     }
 
-    .sidebar-1tnWFu .container-1NXEtd:hover,
-    .sidebar-1tnWFu .container-1NXEtd:active,
-    .sidebar-1tnWFu .privateChannels-oVe7HL:hover,
-    .sidebar-1tnWFu .privateChannels-oVe7HL:active {
+    .sidebar-1tnWFu :where(
+        .container-1NXEtd:hover,
+        .container-1NXEtd:active,
+        .privateChannels-oVe7HL:hover,
+        .privateChannels-oVe7HL:active
+    ) {
         width: var(--float-channel-width) !important;
     }
 
@@ -581,7 +594,7 @@
         transition: var(--float-guildbar-hover-speed) ease;
     }
 
-    .wrapper-1_HaEi:hover+.base-2jDfDU .sidebar-1tnWFu .header-3OsQeK,
+    .wrapper-1_HaEi:hover~.base-2jDfDU .sidebar-1tnWFu .header-3OsQeK,
     .sidebar-1tnWFu .container-1NXEtd:hover .header-3OsQeK,
     .sidebar-1tnWFu .container-1NXEtd:active .header-3OsQeK {
         padding: 0 16px;
@@ -594,9 +607,11 @@
         height: calc(100% - 55px);
     }
 
-    .wrapper-1gVUIN.normal-qRirv5,
-    .wrapper-1gVUIN.minimum-fXpVNc,
-    .wrapper-1gVUIN.noChat-2UYgeE {
+    .wrapper-1gVUIN:where(
+        .normal-qRirv5,
+        .minimum-fXpVNc,
+        .noChat-2UYgeE
+    ) {
         z-index: 0;
     }
 
@@ -619,9 +634,12 @@
     }
 
     .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF,
-    .panels-3wFtMD .container-1zzFcN,
-    .panels-3wFtMD .container-6sXIoE,
-    .panels-3wFtMD .panel-2ZFCRb {
+    .panels-3wFtMD :where(
+        .container-1zzFcN,
+        .container-6sXIoE,
+        .listeningAlong-6YvYsc,
+        .panel-2ZFCRb
+    ) {
         background-color: var(--background-floating);
         border-radius: 5px;
         border: none;
@@ -641,26 +659,23 @@
         max-width: 40px;
     }
 
-    .panels-3wFtMD .container-6sXIoE {
+    .panels-3wFtMD :where(.container-6sXIoE,.listeningAlong-6YvYsc) {
         bottom: 12px !important;
         max-width: 56px;
     }
 
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover,
-    .panels-3wFtMD .container-6sXIoE:hover {
+    .panels-3wFtMD :where(.panel-2ZFCRb.activityPanel-9icbyU:hover,.container-6sXIoE:hover,.listeningAlong-6YvYsc:hover) {
         bottom: 12px !important;
         max-width: 240px;
     }
 
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU .actions-zk2vB_,
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU .info-88fTUI,
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU :where(.actions-zk2vB_,.info-88fTUI),
     .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .flex-2S1XBF,
     .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
         display: none;
     }
 
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover .actions-zk2vB_,
-    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover .info-88fTUI,
+    .panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover :where(.actions-zk2vB_,.info-88fTUI),
     .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .flex-2S1XBF,
     .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
         display: flex;
@@ -690,8 +705,7 @@
         background: none;
     }
 
-    .panels-3wFtMD .horizontal-112GEH>.flex-2S1XBF,
-    .panels-3wFtMD .horizontal-112GEH>.flexChild-3PzYmX {
+    .panels-3wFtMD .horizontal-112GEH>:where(.flex-2S1XBF,.flexChild-3PzYmX) {
         margin-left: 0;
     }
 
@@ -869,8 +883,7 @@
     .profileCustomizationSection-2OOT4p .divider-ogkn3u,
     .customizationSection-IGy2fS:last-child>.colorStandard-21JIj7,
     .customizationSection-IGy2fS.profileColorSection-2BQBEp>:first-child,
-    .customizationSection-IGy2fS:first-child,
-    .customizationSection-IGy2fS:nth-child(3) {
+    .customizationSection-IGy2fS:where(:first-child,:nth-child(3)) {
         display: none;
     }
 
@@ -907,8 +920,7 @@
         background-color: var(--background-tertiary);
     }
 
-    .customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:focus-within,
-    .customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:hover {
+    .customizationSection-IGy2fS:last-child :where(.bioTextArea-dDGOeC:focus-within,.bioTextArea-dDGOeC:hover) {
         opacity: 1;
     }
 
@@ -938,41 +950,4 @@
     .chatContent-3KubbW:hover .channelTextArea-1VQBuV {
         display: block;
     }
-}
-
-.container-1NXEtd[aria-label^='Server for Disease Control ('] .button-2BMPJJ.open-3fGK6o {
-    animation: headerArrow .2s ease-out
-}
-
-@keyframes headerArrow {
-    from {
-        transform: rotate(0)
-    }
-
-    to {
-        transform: translate3d(0, -3px, 0) rotate(-90deg)
-    }
-}
-
-/* favorites-banner */
-#app-mount .container-1NXEtd[aria-label^='Server for Disease Control ('] .header-3OsQeK {
-    box-shadow: none;
-    background: 0 0;
-    filter: drop-shadow(0 1px 1px hsla(0, 0%, 0%, .8))
-}
-
-.container-1NXEtd[aria-label^='Server for Disease Control ('] .container-1-ERn5 {
-    margin-bottom: 87px
-}
-
-.container-1NXEtd[aria-label^='Server for Disease Control ('] .container-1-ERn5::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 135px;
-    pointer-events: none;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, transparent 48px), url(//i.imgur.com/jtcxsU6.png) no-repeat center/cover;
-    box-shadow: var(--elevation-low)
 }
