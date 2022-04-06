@@ -533,6 +533,16 @@
     }
 
     /* channel */
+
+    .header-3OsQeK {
+        display: flex;
+        align-items: center;
+    }
+    
+    .headerContent-2SNbie {
+        width: 100%;
+    }
+    
     html:not(.platform-osx) .base-2jDfDU {
         border-radius: 8px 0 0 0;
     }
