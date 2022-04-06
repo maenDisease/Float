@@ -39,6 +39,11 @@
     transition: padding-left var(--float-app-transition-speed) ease;
 }
 
+.membersWrap-3NUR2t,
+.ChannelDms-channelmembers-wrap {
+    min-height: 100%;
+}
+
 .bd-addon-list #Float-card .bd-description::before {
     position: absolute;
     content: "Window not thin enough.";

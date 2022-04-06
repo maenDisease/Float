@@ -4,17 +4,17 @@
     display:none;
 }
 
-#app-mount .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
+.cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
     transform: scale(1);
     width: 40px;
     height: 40px;
 }
 
-#app-mount .cozy-VmLDNB.wrapper-30-Nkg {
+.cozy-VmLDNB.wrapper-30-Nkg {
     padding-left: 72px;
 }
 
-#app-mount .buttons-3dF5Kd {
+.buttons-3dF5Kd {
     transform: scale(1);
 }
 
@@ -462,7 +462,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 
 .content-1jQy2l>.membersWrap-3NUR2t,
 .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t,
-.ChannelDms-channelmembers-wrap {
+.content-1jQy2l .ChannelDms-channelmembers-wrap {
     position: absolute;
     right: 0;
     resize: vertical;
@@ -684,4 +684,14 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 .layers-OrUESM>.layer-86YKbF:nth-child(2) {
     --width2: 100%;
     --height2: 100%;
+}
+
+@media (max-height: 500px) {
+    .channelTextArea-1VQBuV {
+        display: none;
+    }
+
+    .chatContent-3KubbW:hover .channelTextArea-1VQBuV {
+        display: block;
+    }
 }
