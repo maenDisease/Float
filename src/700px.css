@@ -4,6 +4,20 @@
     display:none;
 }
 
+#app-mount .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
+    transform: scale(1);
+    width: 40px;
+    height: 40px;
+}
+
+#app-mount .cozy-VmLDNB.wrapper-30-Nkg {
+    padding-left: 72px;
+}
+
+#app-mount .buttons-3dF5Kd {
+    transform: scale(1);
+}
+
 /* transition */
 #app-mount,
 .container-ZMc96U {
