@@ -1,0 +1,83 @@
+.cozy-VmLDNB .repliedMessage-3Z6XBG:before,
+.contents-2MsGLg img,
+.iconContainer-2rPbqG {
+    -webkit-transition: var(--float-app-transition-speed) ease;
+    transition: var(--float-app-transition-speed) ease;
+}
+
+.cozy-VmLDNB .repliedMessage-3Z6XBG:before {
+    --gutter: -1px;
+}
+
+.contents-2MsGLg img {
+    left: 1px;
+}
+
+.cozy-VmLDNB.wrapper-30-Nkg {
+    padding-left: 35px;
+    -webkit-transition: padding-left var(--float-app-transition-speed) ease;
+    transition: padding-left var(--float-app-transition-speed) ease;
+}
+
+.topic-11NuQZ.expandable-3CaLeS,
+.buttonContainer-2lnNiN:not(#sendAudioButtons):not(.send-button) .button-f2h6uQ[aria-label]:not(.apateEncryptionKeyButton) .button-2fCJ0o:not(.stickerButton-1-nFh2),
+.toolbar-3_r2xA>:where([aria-label="Threads"],
+    [aria-label="Wątki"],
+    [aria-label="Гілки"],
+    [aria-label="スレッド"]) {
+    display: none;
+}
+
+.bd-addon-list.bd-grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* pin icon */
+.iconContainer-2rPbqG {
+    width: 32px !important;
+}
+
+/* emoji picker */
+.categoryList-2qRrlj {
+    height: 107% !important;
+    transform: rotate(90deg) scaleY(-1);
+    left: 375px;
+    right: unset;
+    bottom: -1px;
+    transform-origin: bottom right;
+    border-radius: 0;
+}
+
+.emojiPickerInExpressionPicker-2nOwH8 .categoryList-2qRrlj {
+    top: unset !important;
+}
+
+#emoji-picker-tab-panel .wrapper-22rqw6 .listItems-6eZzQ1>div,
+#emoji-picker-tab-panel .unicodeShortcut-3N8oDe {
+    transform: rotate(90deg) scaleY(-1);
+}
+
+.categoryItemGuildCategory-3mvXlo svg {
+    width: 24px;
+}
+
+.categoryItemGuildCategory-3mvXlo {
+    margin: 0 !important;
+}
+
+.emojiPicker-6YCk8a .inspector-DFKXwB {
+    display: none;
+}
+
+.categoryList-2qRrlj .guildCategorySeparator-3QYkij {
+    display: none;
+}
+
+.drawerSizingWrapper-1txdWG,
+.emojiPickerInExpressionPicker-2nOwH8 {
+    width: 250px !important;
+}
+
+#emoji-picker-tab-panel .emojiPicker-6YCk8a {
+    grid-template-columns: 0 auto;
+}

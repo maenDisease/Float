@@ -1,0 +1,141 @@
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/diseaseControl.css);
+
+:root {
+    --header-height: 40px;
+    --guildbar-width: 56px;
+    --sidebar-width: 240px;
+
+    --float-app-opacity: 100%;
+    --float-app-transition-speed: 0.5s;
+    --float-channel-width: 240px;
+    --float-initial-memberlist-height: fit-content;
+    --float-sidebar-hide-width: 40px;
+    --float-guildbar-hover-speed: 0.5s;
+}
+
+/* return transition */
+/* 400 */
+.cozy-VmLDNB .repliedMessage-3Z6XBG:before,
+.contents-2MsGLg img,
+.iconContainer-2rPbqG,
+/* 700 */
+#app-mount,
+.sidebar-1tnWFu,
+.container-1NXEtd,
+.container-ZMc96U {
+    -webkit-transition: var(--float-app-transition-speed) ease;
+    transition: var(--float-app-transition-speed) ease;
+}
+
+.guilds-2JjMmN,
+.guilds-2JjMmN div,
+.guilds-2JjMmN svg {
+    -webkit-transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
+    transition: height var(--float-app-transition-speed) ease, width var(--float-app-transition-speed) ease;
+}
+
+.cozy-VmLDNB.wrapper-30-Nkg {
+    -webkit-transition: padding-left var(--float-app-transition-speed) ease;
+    transition: padding-left var(--float-app-transition-speed) ease;
+}
+
+.bd-addon-list #Float-card .bd-description::before {
+    position: absolute;
+    content: "Window not thin enough.";
+    word-break: break-word;
+    padding: 16px 0;
+    max-width: 175px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--header-secondary);
+}
+
+@media (width: 940px) {
+
+    .bd-addon-list #Float-card .bd-addon-header::before,
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child::before {
+        content: '';
+        background-image: url(https://i.imgur.com/nlCohIG.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 47px;
+        background-size: 36px;
+        z-index: 999;
+        pointer-events: none;
+    }
+
+    .bd-addon-list #Float-card .bd-addon-header::before {
+        margin: 0 0 70px 240px;
+    }
+
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child::before {
+        transform: translate(30%, -40%);
+        animation: warningVisibility 0s 1.5s forwards;
+        visibility: hidden;
+    }
+
+    @keyframes warningVisibility {
+        to {
+            visibility: visible;
+        }
+    }
+
+    .bd-addon-list #Float-card:hover .bd-addon-header::before,
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child:hover::before {
+        display: none;
+    }
+
+    .bd-addon-list #Float-card::before,
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child>div::before {
+        content: '';
+        background-image: url(https://i.imgur.com/SqLL5VQ.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: fixed;
+        width: 600px;
+        height: 144px;
+        background-size: 600px;
+        border-radius: 8px;
+        border: 1px solid #f04747;
+        z-index: 999;
+        pointer-events: none;
+        transform: perspective(500px) translateZ(-500px);
+        opacity: 0;
+        transition: transform 0.05s ease-in, opacity 0.05s ease-out;
+    }
+
+    .bd-addon-list #Float-card:hover::before,
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child:hover>div::before {
+        transform: perspective(500px) translateZ(0);
+        opacity: 1;
+        transition: transform 0.05s ease-in, opacity 0.05s ease-out;
+    }
+
+    .bd-addon-list #Float-card::before {
+        top: var(--header-height);
+        right: 100px;
+        margin: auto;
+    }
+
+    .panels-3wFtMD>.container-YkUktl .flex-2S1XBF> :last-child>div::before {
+        left: 100px;
+        bottom: 100px;
+    }
+
+    .bd-addon-list #Float-card .bd-description::before {
+        position: absolute;
+        content: "Window not thin enough.";
+        word-break: break-word;
+        padding: 16px 0;
+        max-width: 175px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: var(--header-secondary);
+    }
+}
