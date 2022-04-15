@@ -168,7 +168,7 @@
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: calc(500px - 1px)) {
 
     .toolbar-3_r2xA {
         display: none;
@@ -281,7 +281,7 @@
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: calc(940px - 1px)) {
 
     /* transition */
     #app-mount,
@@ -538,11 +538,11 @@
         display: flex;
         align-items: center;
     }
-    
+
     .headerContent-2SNbie {
         width: 100%;
     }
-    
+
     html:not(.platform-osx) .base-2jDfDU {
         border-radius: 8px 0 0 0;
     }

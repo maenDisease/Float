@@ -9,10 +9,10 @@
 */
 
 /* Source */
-@import url("https://maendisease.github.io/Float/src/base.css"); 
+@import url("https://maendisease.github.io/Float/src/base.css");
 
 /* Max width values of when each part of Float activates */
-@import url("https://maendisease.github.io/Float/src/700px.css") (max-width: 700px);
+@import url("https://maendisease.github.io/Float/src/940px.css") (max-width: 940px);
 @import url("https://maendisease.github.io/Float/src/400px.css") (max-width: 400px);
 @import url("https://maendisease.github.io/Float/src/300px.css") (max-width: 300px);
 
