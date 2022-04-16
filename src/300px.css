@@ -17,3 +17,13 @@ html.platform-osx .children-3xh0VB {
 .base-2jDfDU {
     border-radius: 0 !important;
 }
+
+.panels-3wFtMD {
+    left:0;
+    bottom:0;
+}
+
+.panels-3wFtMD .avatar-1EWyVD {
+    height: 20px !important;
+    width: 20px !important;
+}
