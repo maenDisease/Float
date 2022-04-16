@@ -12,13 +12,13 @@
 @import url("https://maendisease.github.io/Float/src/base.css");
 
 /* Max width values of when each part of Float activates */
-@import url("https://maendisease.github.io/Float/src/940px.css") (max-width: 940px);
+@import url("https://maendisease.github.io/Float/src/940px.css") (max-width: calc(940px - 1px));
 @import url("https://maendisease.github.io/Float/src/400px.css") (max-width: 400px);
 @import url("https://maendisease.github.io/Float/src/300px.css") (max-width: 300px);
 
 /* Imports */
 /* SettingsIcons by mwittrien, recommended to comment out/remove this if your theme uses custom settings icons. */
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css") (max-width: 700px);
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css") (max-width: calc(940px - 1px));
 
 :root {
     /* MinimalMode */
