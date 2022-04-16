@@ -169,6 +169,34 @@
 }
 
 @media (max-width: calc(500px - 1px)) {
+    /* memberlist */
+    .members-3WRCEx {
+        max-width: 5px !important;
+     /* text-indent: -15px !important; */
+        padding-left: 10px !important;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
+
+    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t {
+        max-width: 5px !important;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
+
+    .members-3WRCEx:hover {
+        max-width: 300px !important;
+     /* text-indent: 0px !important; */
+        padding-left: 0px !important;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
+
+    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t:hover {
+        max-width: 300px !important;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
 
     .toolbar-3_r2xA {
         display: none;
@@ -721,23 +749,33 @@
 
     /* memberlist */
     .members-3WRCEx {
-        height: auto;
+        max-width: 50px;
         max-height: 100vh;
+     /* text-indent: -15px; */
+        padding-left: 10px;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
     }
 
-    .content-1jQy2l>.membersWrap-3NUR2t,
-    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t,
-    .ChannelDms-channelmembers-wrap {
-        position: absolute;
-        right: 0;
-        resize: vertical;
-        overflow: hidden;
-        height: var(--float-initial-memberlist-height);
-        min-height: 135px;
-        max-height: 80%;
-        -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
-        box-shadow: var(--elevation-stroke), var(--elevation-high);
-        z-index: 1 !important;
+    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t {
+        max-width: 50px;
+        max-height: 100vh;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
+
+    .members-3WRCEx:hover {
+        max-width: 300px;
+     /* text-indent: 0px; */
+        padding-left: 0px;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
+    }
+
+    .content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t:hover {
+        max-width: 300px;
+        -webkit-transition: var(--float-guildbar-hover-speed) ease;
+        transition: var(--float-guildbar-hover-speed) ease;
     }
 
     /* quick switcher */
