@@ -1,7 +1,7 @@
 @import url(https://smolalli.github.io/Themes/MinimalMode/source.css);
 
 #app-mount .bd-addon-list #Float-card .bd-description::before {
-    display:none;
+    display: none;
 }
 
 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
@@ -62,8 +62,7 @@
 }
 
 /* toolbar */
-.toolbar-3_r2xA>:where(
-    [aria-label="Hide Member List"],
+.toolbar-3_r2xA>:where([aria-label="Hide Member List"],
     [aria-label="Show Member List"],
     [aria-label="Pinned Messages"],
     [aria-label="Mitgliederliste ausblenden"],
@@ -77,13 +76,11 @@
     [aria-label="Закріплені повідомлення"],
     [aria-label="メンバーリストを非表示"],
     [aria-label="メンバーリストを表示"],
-    [aria-label="ピン留めされたメッセージ"]
-) {
+    [aria-label="ピン留めされたメッセージ"]) {
     order: 1;
 }
 
-.toolbar-3_r2xA>:where(
-    [href="https://support.discord.com"],
+.toolbar-3_r2xA>:where([href="https://support.discord.com"],
     [aria-label="Notification Settings"],
     [aria-label="Add Friends to DM"],
     [aria-label="Benachrichtigungseinstellungen"],
@@ -93,8 +90,7 @@
     [aria-label="Параметри сповіщень"],
     [aria-label="Додати друзів до ПП"],
     [aria-label="通知設定"],
-    [aria-label="DMにフレンドを追加"]
-) {
+    [aria-label="DMにフレンドを追加"]) {
     display: none;
 }
 
@@ -295,10 +291,8 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     transition: var(--float-guildbar-hover-speed) ease;
 }
 
-.sidebar-1tnWFu :where(
-    .container-1NXEtd,
-    .privateChannels-oVe7HL
-) {
+.sidebar-1tnWFu :where(.container-1NXEtd,
+    .privateChannels-oVe7HL) {
     position: fixed !important;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
@@ -319,12 +313,10 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     width: var(--float-channel-width) !important;
 }
 
-.sidebar-1tnWFu :where(
-    .container-1NXEtd:hover,
+.sidebar-1tnWFu :where(.container-1NXEtd:hover,
     .container-1NXEtd:active,
     .privateChannels-oVe7HL:hover,
-    .privateChannels-oVe7HL:active
-) {
+    .privateChannels-oVe7HL:active) {
     width: var(--float-channel-width) !important;
 }
 
@@ -352,11 +344,9 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     height: calc(100% - 55px);
 }
 
-.wrapper-1gVUIN:where(
-    .normal-qRirv5,
+.wrapper-1gVUIN:where(.normal-qRirv5,
     .minimum-fXpVNc,
-    .noChat-2UYgeE
-) {
+    .noChat-2UYgeE) {
     z-index: 0;
 }
 
@@ -379,12 +369,10 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 }
 
 .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF,
-.panels-3wFtMD :where(
-    .container-1zzFcN,
+.panels-3wFtMD :where(.container-1zzFcN,
     .container-6sXIoE,
     .listeningAlong-6YvYsc,
-    .panel-2ZFCRb
-) {
+    .panel-2ZFCRb) {
     background-color: var(--background-floating);
     border-radius: 5px;
     border: none;
@@ -404,23 +392,23 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     max-width: 40px;
 }
 
-.panels-3wFtMD :where(.container-6sXIoE,.listeningAlong-6YvYsc) {
+.panels-3wFtMD :where(.container-6sXIoE, .listeningAlong-6YvYsc) {
     bottom: 12px !important;
     max-width: 56px;
 }
 
-.panels-3wFtMD :where(.panel-2ZFCRb.activityPanel-9icbyU:hover,.container-6sXIoE:hover,.listeningAlong-6YvYsc:hover) {
+.panels-3wFtMD :where(.panel-2ZFCRb.activityPanel-9icbyU:hover, .container-6sXIoE:hover, .listeningAlong-6YvYsc:hover) {
     bottom: 12px !important;
     max-width: 240px;
 }
 
-.panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU :where(.actions-zk2vB_,.info-88fTUI),
+.panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU :where(.actions-zk2vB_, .info-88fTUI),
 .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .flex-2S1XBF,
 .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_ .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
     display: none;
 }
 
-.panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover :where(.actions-zk2vB_,.info-88fTUI),
+.panels-3wFtMD .panel-2ZFCRb.activityPanel-9icbyU:hover :where(.actions-zk2vB_, .info-88fTUI),
 .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .flex-2S1XBF,
 .panels-3wFtMD .container-6sXIoE.withTimeline-824fT_:hover .timeline-UWmgAx .barText-lmqc5O>:nth-child(2) {
     display: flex;
@@ -450,29 +438,81 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     background: none;
 }
 
-.panels-3wFtMD .horizontal-112GEH>:where(.flex-2S1XBF,.flexChild-3PzYmX) {
+.panels-3wFtMD .horizontal-112GEH>:where(.flex-2S1XBF, .flexChild-3PzYmX) {
     margin-left: 0;
 }
 
 /* memberlist */
+
 .members-3WRCEx {
     height: auto;
     max-height: 100vh;
 }
 
-.content-1jQy2l>.membersWrap-3NUR2t,
-.content-1jQy2l>.container-2o3qEW .membersWrap-3NUR2t,
-.content-1jQy2l .ChannelDms-channelmembers-wrap {
+.layout-1qmrhw {
+    justify-content: unset;
+}
+
+.chatContent-3KubbW:not(:last-child) {
+    margin-right: 65px;
+}
+
+:not(.ChannelDms-channelmembers-wrap) .membersWrap-3NUR2t {
     position: absolute;
     right: 0;
-    resize: vertical;
-    overflow: hidden;
-    height: var(--float-initial-memberlist-height);
-    min-height: 135px;
-    max-height: 80%;
-    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
-    box-shadow: var(--elevation-stroke), var(--elevation-high);
-    z-index: 1 !important;
+    width: unset;
+}
+
+:not(.ChannelDms-channelmembers-wrap) .members-3WRCEx {
+    width: 65px;
+    transition: width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+.ChannelDms-channelmembers-wrap {
+    width: 65px;
+    position: absolute;
+    right: 0;
+    transition: width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+:not(.ChannelDms-channelmembers-wrap) .members-3WRCEx:hover,
+.ChannelDms-channelmembers-wrap:hover {
+    width: 240px;
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    transition: width 0.5s 1.25s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+.ChannelDms-channelmembers-wrap :where(.membersWrap-3NUR2t, .members-3WRCEx, .privateChannels-oVe7HL) {
+    width: 100%;
+}
+
+.ChannelDms-channelmembers-wrap .item-3XjbnG {
+    margin: 0;
+    transition: margin 0.5s ease;
+}
+
+.ChannelDms-channelmembers-wrap:hover .item-3XjbnG {
+    margin: 0 8px;
+    transition-delay: 1.25s;
+}
+
+.ChannelDms-channelmembers-wrap .privateChannels-oVe7HL .closeButton-mupH76 {
+    width: 0;
+    margin: 0;
+    padding-right: 0;
+}
+
+.ChannelDms-channelmembers-wrap:hover .privateChannels-oVe7HL .closeButton-mupH76 {
+    animation: floatChannelDmsPrivateChannelsCloseButton 1s 1s forwards;
+}
+
+@keyframes floatChannelDmsPrivateChannelsCloseButton {
+    to {
+        width: 16px;
+        margin: 2px;
+        padding-right: 8px;
+    }
 }
 
 /* quick switcher */
@@ -628,7 +668,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 .profileCustomizationSection-2OOT4p .divider-ogkn3u,
 .customizationSection-IGy2fS:last-child>.colorStandard-21JIj7,
 .customizationSection-IGy2fS.profileColorSection-2BQBEp>:first-child,
-.customizationSection-IGy2fS:where(:first-child,:nth-child(3)) {
+.customizationSection-IGy2fS:where(:first-child, :nth-child(3)) {
     display: none;
 }
 
@@ -665,7 +705,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     background-color: var(--background-tertiary);
 }
 
-.customizationSection-IGy2fS:last-child :where(.bioTextArea-dDGOeC:focus-within,.bioTextArea-dDGOeC:hover) {
+.customizationSection-IGy2fS:last-child :where(.bioTextArea-dDGOeC:focus-within, .bioTextArea-dDGOeC:hover) {
     opacity: 1;
 }
 
