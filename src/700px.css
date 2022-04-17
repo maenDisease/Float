@@ -461,6 +461,8 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     position: absolute;
     right: 0;
     width: unset;
+    min-width: unset;
+    height: 100%;
 }
 
 :not(.ChannelDms-channelmembers-wrap) .members-3WRCEx {
@@ -472,6 +474,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     width: 65px;
     position: absolute;
     right: 0;
+    height: 100%;
     transition: width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
 }
 
@@ -483,7 +486,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     transition: width 0.5s 1.25s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
 }
 
-.ChannelDms-channelmembers-wrap :where(.membersWrap-3NUR2t, .members-3WRCEx, .privateChannels-oVe7HL) {
+.ChannelDms-channelmembers-wrap :is(.membersWrap-3NUR2t, .members-3WRCEx, .privateChannels-oVe7HL) {
     width: 100%;
 }
 
