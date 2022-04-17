@@ -480,7 +480,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 
 :not(.ChannelDms-channelmembers-wrap) .members-3WRCEx:hover,
 .ChannelDms-channelmembers-wrap:hover {
-    width: 240px;
+    width: var(--sidebar-width);
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     transition: width 0.5s 1.25s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
