@@ -13,8 +13,5 @@
     background: var(--info-warning-background);
     border: 1px solid var(--info-warning-foreground);
     color: var(--info-warning-text);
-    content: '\
-Version update. Please redownload Float from the BetterDiscord website.\a
-';
-
+    content: 'Version update. Please redownload Float from the BetterDiscord website.';
 }

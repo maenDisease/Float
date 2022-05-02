@@ -479,7 +479,7 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
     transition: width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
 }
 
-:not(.ChannelDms-channelmembers-wrap) .membersWrap-3NUR2t:hover:hover .members-3WRCEx,
+:not(.ChannelDms-channelmembers-wrap) .membersWrap-3NUR2t:hover .members-3WRCEx,
 .ChannelDms-channelmembers-wrap:hover {
     width: var(--sidebar-width);
     -webkit-box-shadow: var(--elevation-high);
