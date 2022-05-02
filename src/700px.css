@@ -698,7 +698,7 @@ html #MemberCount {
 }
 
 .customizationSection-IGy2fS:last-child .slateTextArea-27tjG0 {
-    padding: 0 0 0 15px;
+    padding: 1px 12px 0 16px;
     font-size: 14px;
     line-height: 18px;
     height: fit-content;
@@ -710,7 +710,8 @@ html #MemberCount {
     background-color: var(--background-tertiary);
 }
 
-.customizationSection-IGy2fS:last-child :where(.bioTextArea-dDGOeC:focus-within, .bioTextArea-dDGOeC:hover) {
+.customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:focus-within,
+.customizationSection-IGy2fS:last-child .bioTextArea-dDGOeC:hover {
     opacity: 1;
 }
 
