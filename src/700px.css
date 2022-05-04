@@ -190,15 +190,21 @@
 .cozy-VmLDNB .headerText-2z4IhQ {
     min-width: 0;
     white-space: nowrap;
+    display:flex;
 }
 
-.cozy-VmLDNB .username-h_Y3Us {
+.cozy-VmLDNB .headerText-2z4IhQ .username-h_Y3Us {
     display: block;
     text-overflow: ellipsis;
+    flex: 1 1;
 }
 
 .cozy-VmLDNB .timestampInline-_lS3aK {
     white-space: nowrap;
+    margin-top: 1px;
+}
+
+.cozy-VmLDNB .headerText-2z4IhQ .PI-indicatorContainer {
     margin-top: 1px;
 }
 
