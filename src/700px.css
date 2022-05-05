@@ -347,6 +347,25 @@ html.platform-osx .sidebar-1tnWFu .privateChannels-oVe7HL {
 }
 
 /* user panel */
+
+.withTagAsButton-OsgQ9L, .withTagless-10ooWt {
+    min-width: unset;
+}
+
+.withTagAsButton-OsgQ9L:hover, .withTagless-10ooWt:hover {
+    background: transparent;
+}
+
+:is(.withTagAsButton-OsgQ9L, .withTagless-10ooWt):hover .avatar-1EWyVD {
+    opacity: .8;
+    -webkit-filter: drop-shadow(var(--elevation-medium));
+    filter: drop-shadow(var(--elevation-medium));
+}
+
+:is(.withTagAsButton-OsgQ9L, .withTagless-10ooWt) .avatar-1EWyVD {
+    transition: opacity .2s ease, filter .2s ease, -webkit-filter .2s ease;
+}
+
 .tree-3agP2X {
     height: calc(100% - 55px);
 }
