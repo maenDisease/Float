@@ -11,6 +11,10 @@
 /* Source */
 @import url("https://maendisease.github.io/Float/src/base.css"); 
 
+/* optional */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/wellThisIsAwkwardSoTryThis.css);
+
 /* Max width values of when each part of Float activates */
 @import url("https://maendisease.github.io/Float/src/700px.css") (max-width: 700px);
 @import url("https://maendisease.github.io/Float/src/400px.css") (max-width: 400px);

@@ -1,5 +1,4 @@
 @import url(https://smolalli.github.io/Themes/MinimalMode/source.css);
-@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 
 #app-mount .bd-addon-list #Float-card .bd-description::before {
     display: none;
