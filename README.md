@@ -1,3 +1,4 @@
+## :warning: This project has moved to a [new repository](https://github.com/maenDisease/BetterDiscordStuff/tree/main/Themes/Float) and has been updated there!
 # Float for Discord
 <p align="center">
   <img src="https://i.imgur.com/kSPFP5v.png" alt="Float Preview"/>
