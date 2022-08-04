@@ -1,5 +1,33 @@
 @import url(https://smolalli.github.io/Themes/MinimalMode/source.css);
 
+#app-mount .base-2jDfDU::before {
+    content: "Float has been updated | Delete your existing Float theme then redownload from the BetterDiscord site";
+    animation: bd-open-notice 400ms ease;
+    overflow: hidden;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding-left: 4px;
+    padding-right: 28px;
+    z-index: 101;
+    flex-shrink: 0;
+    flex-grow: 0;
+    box-shadow: var(--elevation-low);
+    color: #fff;
+    background: var(--color, var(--brand-experiment-600, #3C45A5));
+}
+
+.platform-win .base-2jDfDU::before {
+    border-radius: 8px 0 0;
+}
+
+#app-mount .sidebar-1tnWFu {
+    border-top-left-radius: 0;
+}
+
 #app-mount .bd-addon-list #Float-card .bd-description::before {
     display: none;
 }
