@@ -1,47 +1,112 @@
-## :warning: This project has moved to a [new repository](https://github.com/maenDisease/BetterDiscordStuff/tree/main/Themes/Float) and has been updated there!
-# Float for Discord
-<p align="center">
-  <img src="https://i.imgur.com/kSPFP5v.png" alt="Float Preview"/>
-</p>
+<h1 align="center">Float</h1>
+<p align="center">A practical compact mobile Discord with customization.</p>
 
-## Installing Float
+![](https://maendisease.github.io/Float/illustrations/preview.png)
 
-### BetterDiscord
+---
 
-In BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove Minimum Size`. Optional: enable `Enable Transparency` to use app transparency.
+## :warning: Remove Minimum Size
 
+In BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove Minimum Size`.
 <p align="center">
   <img src="https://i.imgur.com/l292lJE.png" alt="Remove Minimum Size png"/>
 </p>
 
-### Keep the window on top
+## Keep the window on top
 
-#### BetterDiscord
-- Install the plugin [AlwaysOnTop](https://betterdiscord.app/plugin/AlwaysOnTop) by [qwerasd205](https://github.com/qwerasd205).
+### BetterDiscord
+- Install the plugin [AlwaysOnTop by qwerasd205](https://betterdiscord.app/plugin/AlwaysOnTop).
 - Toggle the function by pressing `CTRL/⌘cmd + F11`.
 
-#### Windows
+### Windows
 - Install [Powertoys by Microsoft](https://github.com/microsoft/PowerToys#microsoft-powertoys).
 - Toggle the function by pressing `⊞ Win + CTRL + T`.
 
-## Previews
 
-:warning: `(Picture for comparison purposes only; this theme does not let you open multiple instances of Discord.)`
+## Screenshots
+![](https://maendisease.github.io/Float/illustrations/preview-1.png)
+![preview-2-compress](https://user-images.githubusercontent.com/90428263/179085842-06d19aba-b9c4-4af3-99ef-a0c636278bce.gif)
+<p align="center"><a href="https://maendisease.github.io/Float/illustrations/preview-2.gif">Higher quality mirror gif link</a></p>
 
-<p align="center">
-  <img src="https://i.imgur.com/mLhJ1FV.png" alt="Float Preview"/>
-</p>
-<p align="center">
-  <img src="https://i.ibb.co/yVxgyFt/float-Preview-169.gif" alt="Float Preview"/>
-</p>
 
-## About
+## Features
+* Compatible with other themes *(probably)*
+* Customizable variables
+  ```css
+  :root {
+      /* Guildlist */
+      --guildicon-size: 48;
+      --enable-if-using-favorites-experiment: 0; /* boolean */
+      --guildlist-collapse: 0; /* boolean */
 
-Float is a practical compact theme for [Discord](https://discord.com/). It is activated when the window is resized thinner than Discord's default minimum size. 
-  
-Float uses [MinimalMode](https://github.com/SmolAlli/Themes/tree/main/MinimalMode) by [SmolAlli](https://github.com/SmolAlli) and [SettingsIcons](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css) by [mwittrien](https://github.com/mwittrien)
-</p>
+      /* Guildlist icons */
+      --guildlist-show: 1;
+      --guildlist-peek-unread: 1;
+      --guildlist-peek-ping: 1;
+      --guildlist-peek-selected: 1;
+      --guildlist-peek-group-unread: 1;
 
-## Support
+      /* Channel sidebar */
+      --slide-window-on-hover: 1; /* boolean */
+      --float-sidebar-width: 48;
+      --sidebar-hover-width: 240px;
+      --sidebar-hover-delay: 0.2s;
+      --sidebar-transition-duration: 0.4s;
+      --sidebar-window-gap: 8px;
+      --sidebar-border-radius: 8px;
+      --sidebar-usersettings-width: 66px;
 
-Join the [Discord support server](https://discord.gg/BpwYF5UyHu) for Float assistance, bug reports, contributions, and feature recommendations.
+      /* Memberlist */
+      --float-members-width: 65px;
+      --members-hover-width: 240px;
+      --members-hover-delay: 1.5s;
+      --members-transition-duration: 0.4s;
+
+      /* Channelheader */
+      --topic-opacity: 1;
+      --toolbar-visibility: flex; /* [flex][none] */
+
+      /* Textarea buttons */ /* [flex][none] */
+      --textarea-buttons-gif: flex;
+      --textarea-buttons-sticker: flex;
+      --textarea-buttons-gift: none;
+
+      /* Theme compatibility */
+      /* --float-guildlist-width-correction: 0px; */
+  }
+  ```
+ * Preset window activation levels
+    ```css
+    /* The variables are used when the window is at the set sizes, each media query can be edited/deleted */
+    @media (max-width:700px) {
+        :root {
+            --topic-opacity: 0;
+            --toolbar-visibility: none;
+            --textarea-buttons-gif: none;
+            --textarea-buttons-sticker: none;
+        }
+    }
+
+    @media (max-width:500px) {
+        :root {
+            --guildicon-size: 40;
+            --members-width: 0;
+        }
+    }
+
+    @media (max-width:400px) {
+        :root {
+            --float-sidebar-width: 0;
+        }
+    }
+
+    @media (max-width:300px) {
+        :root {
+            --guildlist-collapse: 1;
+        }
+    }
+    ```
+
+<h2 align="center">Credits</h1>
+<p align="center"><a href="https://github.com/mwittrien">Mwittrien</a> - SettingsIcons</p>
+<p align="center"><a href="https://github.com/Debuggerz1">Debuggerz1</a> - Math</p>
