@@ -1,7 +1,7 @@
 <h1 align="center">Float</h1>
 <p align="center">A practical compact mobile Discord with customization.</p>
 
-![](https://maendisease.github.io/BetterDiscordStuff/Themes/Float/assets/preview.png)
+![](https://maendisease.github.io/Float/illustrations/preview.png)
 
 ---
 
@@ -24,9 +24,9 @@ In BetterDiscord settings, scroll down to WINDOW PREFERENCES and enable `Remove 
 
 
 ## Screenshots
-![](https://maendisease.github.io/BetterDiscordStuff/Themes/Float/assets/preview-1.png)
+![](https://maendisease.github.io/Float/illustrations/preview-1.png)
 ![preview-2-compress](https://user-images.githubusercontent.com/90428263/179085842-06d19aba-b9c4-4af3-99ef-a0c636278bce.gif)
-<p align="center"><a href="https://maendisease.github.io/BetterDiscordStuff/Themes/Float/assets/preview-2.gif">Higher quality mirror gif link</a></p>
+<p align="center"><a href="https://maendisease.github.io/Float/illustrations/preview-2.gif">Higher quality mirror gif link</a></p>
 
 
 ## Features
