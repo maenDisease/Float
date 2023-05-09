@@ -1,0 +1,40 @@
+@media (max-width: 485px) {
+    .fullscreenOnMobile-ixj0e3:not(.detailsAdded-fHiJlm) {
+        top: unset;
+    }
+
+    .root-g14mjS .quickswitcher-pKcM9U,
+    .container-qBnZJg,
+    .container-KM8BU6 {
+        width: 100%;
+    }
+
+    .operations-3V47CY {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    .wrapper-2bCXfR>.downloadLink-1OAglv {
+        width: max-content;
+    }
+
+    .modal-3Crloo.root-g14mjS.fullscreenOnMobile-ixj0e3 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .modal-3Crloo.root-g14mjS.fullscreenOnMobile-ixj0e3>div {
+        pointer-events: auto;
+    }
+
+    .modeSelected-3DmyhH .content-1gYQeQ {
+        background-color: var(--background-modifier-selected);
+    }
+}

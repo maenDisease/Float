@@ -1,0 +1,38 @@
+:root {
+    --guildicon-size: 48;
+    --enable-if-using-favorites-experiment: 0;
+    --guildlist-collapse: 0;
+
+    --slide-window-on-hover: 1;
+    --float-sidebar-width: 48;
+    --sidebar-hover-width: 240px;
+    --sidebar-hover-delay: 0.2s;
+    --sidebar-transition-duration: 0.4s;
+    --sidebar-window-gap: 8px;
+    --sidebar-border-radius: 8px;
+    --sidebar-usersettings-width: 66px;
+
+    --float-members-width: 65px;
+    --members-hover-width: 240px;
+    --members-hover-delay: 1.5s;
+    --members-transition-duration: 0.4s;
+
+    --topic-opacity: 1;
+    --toolbar-visibility: flex;
+
+    --textarea-buttons-gif: flex;
+    --textarea-buttons-sticker: flex;
+    --textarea-buttons-gift: none;
+}
+
+:root {
+    --guildicon-size-px: calc(var(--guildicon-size) * 1px);
+
+    --float-sidebar-width-px: calc(var(--float-sidebar-width) * 1px);
+    --sidebar-transition-exit: var(--sidebar-transition-duration) ease;
+    --sidebar-transition-entry: var(--sidebar-transition-duration) var(--sidebar-hover-delay) ease;
+
+    --members-transition-calc-entry: width var(--members-transition-duration) var(--members-hover-delay) ease, var(--members-transition-calc-box-shadow);
+    --members-transition-calc-exit: width var(--members-transition-duration) ease, var(--members-transition-calc-box-shadow);
+    --members-transition-calc-box-shadow: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
