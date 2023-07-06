@@ -10,17 +10,17 @@
     white-space: nowrap;
 }
 
-.sidebar-1tnWFu .wrapper-NhbLHG .content-1gYQeQ>.children-1MGS9G {
+.sidebar-1tnWFu .wrapper-NhbLHG .link-1_kTxV>.children-1MGS9G {
     margin-left: calc(((min(var(--float-sidebar-width), 96) - min(var(--float-sidebar-width), 97)) + 1) * 32px);
     transition: margin-left var(--sidebar-transition-exit);
 }
 
-.sidebar-1tnWFu:hover .wrapper-NhbLHG .content-1gYQeQ>.children-1MGS9G {
+.sidebar-1tnWFu:hover .wrapper-NhbLHG .link-1_kTxV>.children-1MGS9G {
     margin-left: 0;
     transition: margin-left var(--sidebar-transition-entry);
 }
 
-/* .wrapper-1_HaEi:hover+div.base-2jDfDU .wrapper-NhbLHG .content-1gYQeQ>.children-1MGS9G {
+/* .wrapper-1_HaEi:hover+div.base-2jDfDU .wrapper-NhbLHG .link-1_kTxV>.children-1MGS9G {
     --capped-sidebar-width: min(var(--float-sidebar-width), 96);
     --cap-sidebar-exceeded: calc(min(var(--float-sidebar-width), 97) - var(--capped-sidebar-width));
     margin-left: calc((var(--capped-sidebar-width) / var(--capped-sidebar-width) - var(--cap-sidebar-exceeded)) * 32px);
