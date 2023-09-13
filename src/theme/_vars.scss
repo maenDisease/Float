@@ -27,6 +27,7 @@
 
 :root {
     --guildicon-size-px: calc(var(--guildicon-size) * 1px);
+    --server-size: calc(var(--guildicon-size) * 1px);
 
     --float-sidebar-width-px: calc(var(--float-sidebar-width) * 1px);
     --sidebar-transition-exit: var(--sidebar-transition-duration) ease;
