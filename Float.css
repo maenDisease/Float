@@ -1,4 +1,5 @@
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css);
+@import url(https://discordstyles.github.io/HorizontalServerList/resizablelist.css);
 :root {
   --guildicon-size: 48;
   --enable-if-using-favorites-experiment: 0;
@@ -24,6 +25,7 @@
 
 :root {
   --guildicon-size-px: calc(var(--guildicon-size) * 1px);
+  --server-size: calc(var(--guildicon-size) * 1px);
   --float-sidebar-width-px: calc(var(--float-sidebar-width) * 1px);
   --sidebar-transition-exit: var(--sidebar-transition-duration) ease;
   --sidebar-transition-entry: var(--sidebar-transition-duration) var(--sidebar-hover-delay) ease;
