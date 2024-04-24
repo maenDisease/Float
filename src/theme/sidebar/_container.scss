@@ -1,4 +1,4 @@
-.sidebar_ded4b5 {
+.sidebar_e031be {
     overflow: hidden;
 }
 
@@ -6,27 +6,27 @@
     white-space: nowrap;
 }
 
-.layout_bb8e67 .wrappedName__88f2c {
+.layout_bb8e67 .wrappedName__3900f {
     white-space: nowrap;
 }
 
-.sidebar_ded4b5 .wrapper__7bcde .link__95dc0>.children_a486f8 {
+.sidebar_e031be .wrapper__612a5 .link_ddbb36>.children__563f2 {
     margin-left: calc(((min(var(--float-sidebar-width), 96) - min(var(--float-sidebar-width), 97)) + 1) * 32px);
     transition: margin-left var(--sidebar-transition-exit);
 }
 
-.sidebar_ded4b5:hover .wrapper__7bcde .link__95dc0>.children_a486f8 {
+.sidebar_e031be:hover .wrapper__612a5 .link_ddbb36>.children__563f2 {
     margin-left: 0;
     transition: margin-left var(--sidebar-transition-entry);
 }
 
-/* .wrapper_a7e7a8:hover+div.base__3e6af .wrapper__7bcde .link__95dc0>.children_a486f8 {
+/* .wrapper__216eb:hover+div.base_c0676e .wrapper__612a5 .link_ddbb36>.children__563f2 {
     --capped-sidebar-width: min(var(--float-sidebar-width), 96);
     --cap-sidebar-exceeded: calc(min(var(--float-sidebar-width), 97) - var(--capped-sidebar-width));
     margin-left: calc((var(--capped-sidebar-width) / var(--capped-sidebar-width) - var(--cap-sidebar-exceeded)) * 32px);
 } */
 
-#app-mount .app_b1f720 .sidebar_ded4b5 {
+#app-mount .app_b1f720 .sidebar_e031be {
     position: absolute;
     z-index: 101;
     height: 100%;
@@ -36,100 +36,100 @@
     transition: width var(--sidebar-transition-exit);
 }
 
-.platform-win #app-mount .sidebar_ded4b5 {
+.platform-win #app-mount .sidebar_e031be {
     border-top-right-radius: var(--sidebar-border-radius);
 }
 
-#app-mount .app_b1f720 .animatedContainer__341f6,
-.bannerImage__39c51,
-.bannerImg_c85b7f {
+#app-mount .app_b1f720 .animatedContainer__0e828,
+.bannerImage_c73a57,
+.bannerImg_fe5c1b {
     width: 100%;
 }
 
-.sidebar_ded4b5 .channel_c21703 {
+.sidebar_e031be .channel__0aef5 {
     max-width: unset;
 }
 
-.container__4f639 {
+.container_bc43c1 {
     white-space: nowrap;
 }
 
-.platform-win .sidebar_ded4b5+div,
-.platform-win .sidebar_ded4b5~.chat__52833
-.platform-win .sidebar_ded4b5~.container__5c7e7 {
+.platform-win .sidebar_e031be+div,
+.platform-win .sidebar_e031be~.chat__52833
+.platform-win .sidebar_e031be~.container_bd15da {
     border-top-left-radius: var(--sidebar-border-radius);
 }
 
-.sidebar_ded4b5:hover .privateChannels__93473 .closeButton__8f1fd {
+.sidebar_e031be:hover .privateChannels__9b518 .closeButton__116c3 {
     -webkit-animation: floatChannelDmsPrivateChannelsCloseButton var(--sidebar-transition-duration) var(--sidebar-hover-delay) forwards;
     animation: floatChannelDmsPrivateChannelsCloseButton var(--sidebar-transition-duration) var(--sidebar-hover-delay) forwards;
 }
 
-.sidebar_ded4b5>* {
+.sidebar_e031be>* {
     width: var(--float-sidebar-width-px);
     -webkit-transition: width var(--sidebar-transition-exit);
     transition: width var(--sidebar-transition-exit);
 }
 
-.base__3e6af .content__4bf10 .sidebar_ded4b5:hover>* {
+.base_c0676e .content__76dcf .sidebar_e031be:hover>* {
     width: var(--sidebar-hover-width);
     -webkit-transition: width var(--sidebar-transition-entry);
     transition: width var(--sidebar-transition-entry);
 }
 
-.sidebar_ded4b5+div,
-.sidebar_ded4b5~.chat__52833,
-.sidebar_ded4b5~.container__5c7e7 {
+.sidebar_e031be+div,
+.sidebar_e031be~.chat__52833,
+.sidebar_e031be~.container_bd15da {
     margin-left: calc(min(1, var(--float-sidebar-width)) * (var(--float-sidebar-width-px) + var(--sidebar-window-gap)));
     transition: -webkit-transform var(--sidebar-transition-exit), transform var(--sidebar-transition-exit);
 }
 
-.sidebar_ded4b5:hover+div,
-.sidebar_ded4b5:hover~.chat__52833,
-.sidebar_ded4b5:hover~.container__5c7e7 {
+.sidebar_e031be:hover+div,
+.sidebar_e031be:hover~.chat__52833,
+.sidebar_e031be:hover~.container_bd15da {
     -webkit-transform: translateX(calc(var(--slide-window-on-hover) * (var(--sidebar-hover-width) - var(--float-sidebar-width-px) + (var(--slide-window-on-hover) * (1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-window-gap)))));
     transform: translateX(calc(var(--slide-window-on-hover) * (var(--sidebar-hover-width) - var(--float-sidebar-width-px) + (var(--slide-window-on-hover) * (1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-window-gap)))));
     transition: -webkit-transform var(--sidebar-transition-entry), transform var(--sidebar-transition-entry);
 }
 
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5>* {
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be>* {
     width: calc((min(var(--float-sidebar-width), 1) * (var(--float-sidebar-width) * 1px)) + ((1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-hover-width)));
     -webkit-transition: width var(--sidebar-transition-entry);
     transition: width var(--sidebar-transition-entry);
 }
 
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5+div,
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5~.chat__52833,
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5~.container__5c7e7 {
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be+div,
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be~.chat__52833,
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be~.container_bd15da {
     -webkit-transform: translateX(calc(var(--slide-window-on-hover) * ((min(var(--float-sidebar-width), 1) * (min(var(--float-sidebar-width), 0) * 1px)) + ((1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-hover-width) + (var(--slide-window-on-hover) * (1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-window-gap))))));
     transform: translateX(calc(var(--slide-window-on-hover) * ((min(var(--float-sidebar-width), 1) * (min(var(--float-sidebar-width), 0) * 1px)) + ((1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-hover-width) + (var(--slide-window-on-hover) * (1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-window-gap))))));
     transition: -webkit-transform var(--sidebar-transition-entry), transform var(--sidebar-transition-entry), margin-left var(--sidebar-transition-entry);
 }
 
-.sidebar_ded4b5 .privateChannels__93473,
-.sidebar_ded4b5 .privateChannels__93473+.panels__58331,
-.sidebar_ded4b5>.thin_b1c063,
-.sidebar_ded4b5>.thin_b1c063+.panels__58331 {
+.sidebar_e031be .privateChannels__9b518,
+.sidebar_e031be .privateChannels__9b518+.panels__58331,
+.sidebar_e031be>.thin_b1c063,
+.sidebar_e031be>.thin_b1c063+.panels__58331 {
     width: calc(min(1, var(--float-sidebar-width)) * (var(--float-sidebar-width-px) + 17px));
 }
 
-.sidebar_ded4b5+.container__5c7e7,
-.sidebar_ded4b5+.applicationStore_fc7d76,
-.sidebar_ded4b5+.pageWrapper_fef757 {
+.sidebar_e031be+.container_bd15da,
+.sidebar_e031be+.applicationStore__444b9,
+.sidebar_e031be+.pageWrapper_c182d3 {
     margin-left: calc(min(1, var(--float-sidebar-width)) * (var(--float-sidebar-width-px) + var(--sidebar-window-gap) + 17px));
     transition: -webkit-transform var(--sidebar-transition-exit), transform var(--sidebar-transition-exit), margin-left var(--sidebar-transition-exit);
 }
 
-.sidebar_ded4b5:hover+.container__5c7e7,
-.sidebar_ded4b5:hover+.applicationStore_fc7d76,
-.sidebar_ded4b5:hover+.pageWrapper_fef757 {
+.sidebar_e031be:hover+.container_bd15da,
+.sidebar_e031be:hover+.applicationStore__444b9,
+.sidebar_e031be:hover+.pageWrapper_c182d3 {
     margin-left: calc(min(1, var(--float-sidebar-width)) * (var(--float-sidebar-width-px) + var(--sidebar-window-gap) + 0px + (1 - var(--slide-window-on-hover)) * (min(var(--float-sidebar-width), 1)) * 17px));
     transition: -webkit-transform var(--sidebar-transition-entry), transform var(--sidebar-transition-entry), margin-left var(--sidebar-transition-entry);
 }
 
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5 .privateChannels__93473,
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5 .privateChannels__93473+.panels__58331,
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5>.thin_b1c063,
-.wrapper_a7e7a8:hover+.base__3e6af .sidebar_ded4b5>.thin_b1c063+.panels__58331 {
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be .privateChannels__9b518,
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be .privateChannels__9b518+.panels__58331,
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be>.thin_b1c063,
+.wrapper__216eb:hover+.base_c0676e .sidebar_e031be>.thin_b1c063+.panels__58331 {
     width: calc((min(var(--float-sidebar-width), 1) * ((var(--float-sidebar-width) + 17) * 1px)) + ((1 - min(var(--float-sidebar-width), 1)) * var(--sidebar-hover-width)));
 }
