@@ -1,21 +1,21 @@
-.content__01e65>.container_f79ab4 {
+.content_a7d72e>.container_cbd271 {
     margin-left: var(--float-members-width);
 }
 
-.members__573eb {
+.members_cbd271 {
     width: 100%;
 }
 
-.member_aa4760 {
+.member_a31c43 {
     max-width: 100%;
 }
 
 /* BANDAID */
-#app-mount .content__01e65>.membersWrap__5ca6b:not(:hover) {
+#app-mount .content_a7d72e>.membersWrap_cbd271:not(:hover) {
     position: relative;
 }
 
-#app-mount .membersWrap__5ca6b {
+#app-mount .membersWrap_cbd271 {
     position: absolute;
     right: 0;
     min-width: unset;
@@ -24,12 +24,12 @@
     transition: var(--members-transition-calc-exit);
 }
 
-#app-mount .membersWrap__5ca6b:hover {
+#app-mount .membersWrap_cbd271:hover {
     width: var(--members-hover-width);
     transition: var(--members-transition-calc-entry);
 }
 
-.content__01e65>.container_f79ab4 .membersWrap__5ca6b:hover {
+.content_a7d72e>.container_cbd271 .membersWrap_cbd271:hover {
     -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
     box-shadow: var(--elevation-stroke), var(--elevation-high);
 }
@@ -45,19 +45,19 @@
     transition: var(--members-transition-calc-entry);
 }
 
-.ChannelDms-channelmembers-wrap .container_f79ab4,
-.ChannelDms-channelmembers-wrap .privateChannels__9b518 {
+.ChannelDms-channelmembers-wrap .container_cbd271,
+.ChannelDms-channelmembers-wrap .privateChannels_f0963d {
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
-.ChannelDms-channelmembers-wrap .privateChannels__9b518 {
+.ChannelDms-channelmembers-wrap .privateChannels_f0963d {
     height: calc(100% - 45px);
 }
 
-.ChannelDms-channelmembers-wrap .membersWrap__5ca6b,
-.ChannelDms-channelmembers-wrap .privateChannels__9b518 {
+.ChannelDms-channelmembers-wrap .membersWrap_cbd271,
+.ChannelDms-channelmembers-wrap .privateChannels_f0963d {
     width: var(--float-members-width);
     transition: var(--members-transition-calc-exit);
 }
@@ -70,33 +70,33 @@
 }
 
 #app-mount .ChannelDms-channelmembers-wrap:hover .ChannelDms-channelmembers-header,
-.ChannelDms-channelmembers-wrap:hover .membersWrap__5ca6b,
-.ChannelDms-channelmembers-wrap:hover .privateChannels__9b518 {
+.ChannelDms-channelmembers-wrap:hover .membersWrap_cbd271,
+.ChannelDms-channelmembers-wrap:hover .privateChannels_f0963d {
     width: var(--members-hover-width);
     transition: var(--members-transition-calc-entry);
 }
 
-.ChannelDms-channelmembers-header .item__48dda {
+.ChannelDms-channelmembers-header .item_a0 {
     margin: 0 2px;
     transition: margin var(--members-transition-duration) ease;
 }
 
-.ChannelDms-channelmembers-wrap:hover .ChannelDms-channelmembers-header .item__48dda {
+.ChannelDms-channelmembers-wrap:hover .ChannelDms-channelmembers-header .item_a0 {
     margin: 0 8px;
     transition: margin var(--members-transition-duration) var(--members-hover-delay) ease;
 }
 
-.ChannelDms-channelmembers-wrap .channel__0aef5 {
+.ChannelDms-channelmembers-wrap .channel_c91bad {
     max-width: unset;
 }
 
-.privateChannels__9b518 .closeButton__116c3 {
+.privateChannels_f0963d .closeButton_c91bad {
     width: 0;
     margin: 0;
     padding-right: 0;
 }
 
-.ChannelDms-channelmembers-wrap:hover .privateChannels__9b518 .closeButton__116c3 {
+.ChannelDms-channelmembers-wrap:hover .privateChannels_f0963d .closeButton_c91bad {
     animation: floatChannelDmsPrivateChannelsCloseButton var(--members-transition-duration) var(--members-hover-delay) forwards;
 }
 
